@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|c:\\users\\vivobook 15\\desktop\\course_work_rio\\agrodictionary\\agrodictionary\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|c:\\users\\vivobook 15\\desktop\\course_work_rio\\agrodictionary\\agrodictionary\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|c:\\users\\vivobook 15\\desktop\\course_work_rio\\agrodictionary\\agrodictionary\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|c:\\users\\vivobook 15\\desktop\\course_work_rio\\agrodictionary\\agrodictionary\\agrodictionary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\agrodictionary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\models\\handbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|c:\\users\\vivobook 15\\desktop\\course_work_rio\\agrodictionary\\agrodictionary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|c:\\users\\vivobook 15\\desktop\\course_work_rio\\agrodictionary\\agrodictionary\\models\\handbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\models\\handbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\models\\plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\models\\plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,24 +30,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Form1.cs",
-              "RelativeDocumentMoniker": "AgroDictionary\\Form1.cs",
-              "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Form1.cs",
-              "RelativeToolTip": "AgroDictionary\\Form1.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAWwAgAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Program.cs",
+              "RelativeDocumentMoniker": "AgroDictionary\\Program.cs",
+              "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Program.cs",
+              "RelativeToolTip": "AgroDictionary\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T19:22:58.821Z",
+              "WhenOpened": "2024-05-04T10:09:50.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "MainPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\MainPage.cs",
+              "RelativeDocumentMoniker": "AgroDictionary\\Forms\\MainPage.cs",
+              "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\MainPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "AgroDictionary\\Forms\\MainPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T10:07:29.568Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AgroDictionary",
+              "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\AgroDictionary.csproj",
+              "RelativeDocumentMoniker": "AgroDictionary\\AgroDictionary.csproj",
+              "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\AgroDictionary.csproj",
+              "RelativeToolTip": "AgroDictionary\\AgroDictionary.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-04T10:04:35.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Plant.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Models\\Plant.cs",
+              "RelativeDocumentMoniker": "AgroDictionary\\Models\\Plant.cs",
+              "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Models\\Plant.cs",
+              "RelativeToolTip": "AgroDictionary\\Models\\Plant.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:29:52.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Handbook.cs",
               "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Models\\Handbook.cs",
               "RelativeDocumentMoniker": "AgroDictionary\\Models\\Handbook.cs",
@@ -47,19 +92,8 @@
               "RelativeToolTip": "AgroDictionary\\Models\\Handbook.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T18:37:45.654Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Form1.cs",
-              "RelativeDocumentMoniker": "AgroDictionary\\Form1.cs",
-              "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "AgroDictionary\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T18:34:25.279Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2024-04-20T18:37:45.654Z",
+              "EditorCaption": ""
             }
           ]
         }
