@@ -18,6 +18,7 @@ namespace AgroDictionary.Forms
         public MainPage()
         {
             InitializeComponent();
+            result_field_listbox.SelectedIndexChanged += result_field_listbox_SelectedIndexChanged;
         }
 
         private void search_button_Click(object sender, EventArgs e)
@@ -34,8 +35,6 @@ namespace AgroDictionary.Forms
 
             List<Plant> searchresults = search.SearchInfo(NamePlant, TypePlant, MaturTimePlant, WeightPlant, HybridityPlant, ExpDatePlant);
 
-            result_field_listbox.Items.Clear();
-
             if (searchresults.Count > 0)
             {
                 foreach (var res in searchresults)
@@ -49,7 +48,22 @@ namespace AgroDictionary.Forms
                 MessageBox.Show("На жаль, результатів не знайдено.");
             }
         }
+        private void result_field_listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+                if (result_field_listbox.SelectedItem != null)
+                { 
+                    
+                    string selectedplant = result_field_listbox.SelectedItem.ToString();
 
+                    string jsonString = selectedplant.Substring(selectedplant.IndexOf("                                                                                                                                                                    ") + 1).Trim();
+
+                    Plant selectedPlant = JsonConvert.DeserializeObject<Plant>(jsonString);
+
+                    ShowPlantInfo(selectedPlant);
+
+                    result_field_listbox.Items.Clear();
+                }
+        }
         private void clear_button_Click(object sender, EventArgs e)
         {
             name_of_culture_textbox.Text = "";
@@ -59,31 +73,12 @@ namespace AgroDictionary.Forms
             hybridity_of_culture_comboBox.SelectedIndex = -1;
             exp_date_comboBox.SelectedIndex = -1;
         }
-
-        private void result_field_listbox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (result_field_listbox.SelectedItem != null)
-            {
-                // Отримати вибраний об'єкт JSON з ListBox
-                string selectedplant = result_field_listbox.SelectedItem.ToString();
-
-                // Extract the JSON part from the selected item
-                string jsonString = selectedplant.Substring(selectedplant.IndexOf("                                                                                                                                                                    ") + 1).Trim();
-
-                // Перетворити JSON-рядок на об'єкт Plant
-                Plant selectedPlant = JsonConvert.DeserializeObject<Plant>(jsonString);
-
-                // Показати форму з детальною інформацією про рослину
-                ShowPlantInfo(selectedPlant);
-
-                result_field_listbox.Items.Clear();
-            }
-
-        }
+        
         private void ShowPlantInfo(Plant plant)
         {
             
             InfoForm plantDetailsForm = new InfoForm(plant);
+
             plantDetailsForm.ShowDialog();
         }
     }
