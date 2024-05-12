@@ -19,8 +19,31 @@ namespace AgroDictionary.Forms
         {
             InitializeComponent();
             result_field_listbox.SelectedIndexChanged += result_field_listbox_SelectedIndexChanged;
+            name_of_culture_textbox.Validating += name_of_culture_textbox_Validating;
+            type_of_culture_comboBox.Validating += type_of_culture_comboBox_Validating;
         }
-
+        private void name_of_culture_textbox_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text))
+            {
+                titleError_label.Visible = true;
+            }
+            else
+            {
+                titleError_label.Visible = false;
+            }
+        }
+        private void type_of_culture_comboBox_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(type_of_culture_comboBox.Text))
+            {
+                titleError2_label.Visible = true;
+            }
+            else
+            {
+                titleError2_label.Visible = false;
+            }
+        }
         private void search_button_Click(object sender, EventArgs e)
         {
             string NamePlant = name_of_culture_textbox.Text;

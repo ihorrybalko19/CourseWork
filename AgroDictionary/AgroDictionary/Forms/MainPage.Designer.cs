@@ -89,6 +89,9 @@
             fetal_weight_label = new Label();
             matur_time_label = new Label();
             name_of_culture_label = new Label();
+            MainPage_panel = new Panel();
+            titleError2_label = new Label();
+            titleError_label = new Label();
             menuStrip_of_mainpage.SuspendLayout();
             panel2.SuspendLayout();
             panel9.SuspendLayout();
@@ -96,6 +99,7 @@
             panel7.SuspendLayout();
             panel4.SuspendLayout();
             panel1.SuspendLayout();
+            MainPage_panel.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip_of_mainpage
@@ -106,7 +110,7 @@
             menuStrip_of_mainpage.Items.AddRange(new ToolStripItem[] { файлToolStripMenuItem, справкаToolStripMenuItem, рослиниToolStripMenuItem, селекціонерствоToolStripMenuItem });
             menuStrip_of_mainpage.Location = new Point(0, 0);
             menuStrip_of_mainpage.Name = "menuStrip_of_mainpage";
-            menuStrip_of_mainpage.Size = new Size(830, 28);
+            menuStrip_of_mainpage.Size = new Size(814, 28);
             menuStrip_of_mainpage.TabIndex = 0;
             menuStrip_of_mainpage.Text = "menuStrip1";
             // 
@@ -255,7 +259,7 @@
             titlehandbookofbreeder.AutoSize = true;
             titlehandbookofbreeder.Font = new Font("Sitka Banner", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             titlehandbookofbreeder.ForeColor = Color.Snow;
-            titlehandbookofbreeder.Location = new Point(248, 47);
+            titlehandbookofbreeder.Location = new Point(237, 11);
             titlehandbookofbreeder.Name = "titlehandbookofbreeder";
             titlehandbookofbreeder.Size = new Size(380, 43);
             titlehandbookofbreeder.TabIndex = 28;
@@ -266,7 +270,7 @@
             title_searching_result.AutoSize = true;
             title_searching_result.Font = new Font("Sitka Banner", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             title_searching_result.ForeColor = Color.Snow;
-            title_searching_result.Location = new Point(338, 439);
+            title_searching_result.Location = new Point(336, 392);
             title_searching_result.Name = "title_searching_result";
             title_searching_result.Size = new Size(165, 49);
             title_searching_result.TabIndex = 27;
@@ -277,7 +281,7 @@
             result_field_listbox.Font = new Font("Sitka Banner", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             result_field_listbox.FormattingEnabled = true;
             result_field_listbox.ItemHeight = 29;
-            result_field_listbox.Location = new Point(28, 491);
+            result_field_listbox.Location = new Point(26, 444);
             result_field_listbox.Name = "result_field_listbox";
             result_field_listbox.Size = new Size(755, 120);
             result_field_listbox.TabIndex = 26;
@@ -293,7 +297,7 @@
             panel2.Controls.Add(search_button);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(extraparameters_label);
-            panel2.Location = new Point(440, 114);
+            panel2.Location = new Point(452, 67);
             panel2.Name = "panel2";
             panel2.Size = new Size(357, 332);
             panel2.TabIndex = 25;
@@ -540,9 +544,9 @@
             panel1.Controls.Add(fetal_weight_label);
             panel1.Controls.Add(matur_time_label);
             panel1.Controls.Add(name_of_culture_label);
-            panel1.Location = new Point(10, 114);
+            panel1.Location = new Point(3, 67);
             panel1.Name = "panel1";
-            panel1.Size = new Size(424, 305);
+            panel1.Size = new Size(412, 305);
             panel1.TabIndex = 24;
             // 
             // hybridity_of_culture_comboBox
@@ -686,19 +690,55 @@
             name_of_culture_label.TabIndex = 1;
             name_of_culture_label.Text = "Назва культури";
             // 
+            // MainPage_panel
+            // 
+            MainPage_panel.Anchor = AnchorStyles.Top;
+            MainPage_panel.Controls.Add(titleError2_label);
+            MainPage_panel.Controls.Add(titleError_label);
+            MainPage_panel.Controls.Add(titlehandbookofbreeder);
+            MainPage_panel.Controls.Add(panel1);
+            MainPage_panel.Controls.Add(title_searching_result);
+            MainPage_panel.Controls.Add(panel2);
+            MainPage_panel.Controls.Add(result_field_listbox);
+            MainPage_panel.Location = new Point(0, 31);
+            MainPage_panel.Name = "MainPage_panel";
+            MainPage_panel.Size = new Size(809, 591);
+            MainPage_panel.TabIndex = 29;
+            // 
+            // titleError2_label
+            // 
+            titleError2_label.AutoSize = true;
+            titleError2_label.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleError2_label.ForeColor = Color.Red;
+            titleError2_label.Location = new Point(414, 149);
+            titleError2_label.Name = "titleError2_label";
+            titleError2_label.Size = new Size(20, 23);
+            titleError2_label.TabIndex = 30;
+            titleError2_label.Text = "*";
+            titleError2_label.Visible = false;
+            // 
+            // titleError_label
+            // 
+            titleError_label.AutoSize = true;
+            titleError_label.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleError_label.ForeColor = Color.Red;
+            titleError_label.Location = new Point(414, 109);
+            titleError_label.Name = "titleError_label";
+            titleError_label.Size = new Size(20, 23);
+            titleError_label.TabIndex = 29;
+            titleError_label.Text = "*";
+            titleError_label.Visible = false;
+            // 
             // MainPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.ForestGreen;
-            ClientSize = new Size(830, 634);
-            Controls.Add(titlehandbookofbreeder);
-            Controls.Add(title_searching_result);
-            Controls.Add(result_field_listbox);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            ClientSize = new Size(814, 623);
+            Controls.Add(MainPage_panel);
             Controls.Add(menuStrip_of_mainpage);
             MainMenuStrip = menuStrip_of_mainpage;
+            MinimumSize = new Size(832, 670);
             Name = "MainPage";
             Text = "MainPage";
             menuStrip_of_mainpage.ResumeLayout(false);
@@ -715,6 +755,8 @@
             panel4.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            MainPage_panel.ResumeLayout(false);
+            MainPage_panel.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -781,5 +823,8 @@
         private Label fetal_weight_label;
         private Label matur_time_label;
         private Label name_of_culture_label;
+        private Panel MainPage_panel;
+        private Label titleError2_label;
+        private Label titleError_label;
     }
 }
