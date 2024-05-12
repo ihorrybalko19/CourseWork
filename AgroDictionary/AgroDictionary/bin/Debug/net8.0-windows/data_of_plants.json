@@ -1,0 +1,62 @@
+[
+  {
+    "Id": "1",
+    "Name": "Рома",
+    "Type": "цибуля ",
+    "Maturation_Time": "пізньостиглі",
+    "Weight": "понад 300 гр.",
+    "Hybridity": "наявна",
+    "Expiration_Date": "до 4 місяців",
+    "Type_of_Pollution": null,
+    "Is_Cuboid": null,
+    "Is_Indeterminate": null,
+    "Potential_Harvest": null,
+    "Starch_Content": null,
+    "Description": "Рома 785378778Ц4НРНЦ4РР4Н"
+  },
+  {
+    "Id": "2",
+    "Name": "томатооо",
+    "Type": "помідор",
+    "Maturation_Time": "середньостиглі",
+    "Weight": "300 гр",
+    "Hybridity": "відсутня",
+    "Expiration_Date": "від 3-3,5 місяців",
+    "Type_of_Pollution": null,
+    "Is_Cuboid": null,
+    "Is_Indeterminate": null,
+    "Potential_Harvest": null,
+    "Starch_Content": null,
+    "Description": "Круто"
+  },
+  {
+    "Id": "3",
+    "Name": "Слов'янка",
+    "Type": "картопля",
+    "Maturation_Time": "ранньостиглі",
+    "Weight": "300 гр",
+    "Hybridity": "наявна",
+    "Expiration_Date": "від 3-3,5 місяців",
+    "Type_of_Pollution": null,
+    "Is_Cuboid": null,
+    "Is_Indeterminate": null,
+    "Potential_Harvest": null,
+    "Starch_Content": null,
+    "Description": "111111111111111111111111111111111111111111111111111"
+  },
+  {
+    "Id": "c4a89efd-02a9-48aa-b5ef-d9f285a67ba5",
+    "Name": "Роднічок",
+    "Type": "огірок",
+    "Maturation_Time": "ранньостиглі",
+    "Weight": "100 гр",
+    "Hybridity": "відсутня",
+    "Expiration_Date": "до 4 місяців",
+    "Type_of_Pollution": null,
+    "Is_Cuboid": null,
+    "Is_Indeterminate": null,
+    "Potential_Harvest": null,
+    "Starch_Content": null,
+    "Description": "4о4рекйкеококео"
+  }
+]
