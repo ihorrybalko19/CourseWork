@@ -45,6 +45,7 @@
             label1 = new Label();
             menuStrip1 = new MenuStrip();
             редагуватиРослинуToolStripMenuItem = new ToolStripMenuItem();
+            редагуватиРослинуToolStripMenuItem1 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -223,9 +224,17 @@
             // 
             // редагуватиРослинуToolStripMenuItem
             // 
+            редагуватиРослинуToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { редагуватиРослинуToolStripMenuItem1 });
             редагуватиРослинуToolStripMenuItem.Name = "редагуватиРослинуToolStripMenuItem";
-            редагуватиРослинуToolStripMenuItem.Size = new Size(187, 24);
-            редагуватиРослинуToolStripMenuItem.Text = "Редагувати рослину";
+            редагуватиРослинуToolStripMenuItem.Size = new Size(92, 24);
+            редагуватиРослинуToolStripMenuItem.Text = "Рослини";
+            // 
+            // редагуватиРослинуToolStripMenuItem1
+            // 
+            редагуватиРослинуToolStripMenuItem1.Name = "редагуватиРослинуToolStripMenuItem1";
+            редагуватиРослинуToolStripMenuItem1.Size = new Size(256, 26);
+            редагуватиРослинуToolStripMenuItem1.Text = "Редагувати рослину";
+            редагуватиРослинуToolStripMenuItem1.Click += редагуватиРослинуToolStripMenuItem1_Click;
             // 
             // InfoForm
             // 
@@ -276,5 +285,6 @@
         private Label label1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem редагуватиРослинуToolStripMenuItem;
+        private ToolStripMenuItem редагуватиРослинуToolStripMenuItem1;
     }
 }

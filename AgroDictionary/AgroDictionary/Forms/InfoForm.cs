@@ -19,7 +19,7 @@ namespace AgroDictionary.Forms
         {
             InitializeComponent();
         }
-      
+
         private Plant plant;
 
         public InfoForm(Plant plant)
@@ -39,5 +39,14 @@ namespace AgroDictionary.Forms
             description_of_culture_textbox.Text = plant.Description;
 
         }
+
+        private void редагуватиРослинуToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            EditPage edit_page= new EditPage();
+
+            DialogResult result = edit_page.ShowDialog();
+                
+        }
+        
     }
 }
