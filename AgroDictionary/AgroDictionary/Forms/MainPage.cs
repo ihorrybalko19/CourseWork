@@ -35,7 +35,7 @@ namespace AgroDictionary.Forms
         }
         private void type_of_culture_comboBox_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(type_of_culture_comboBox.Text))
+            if (type_of_culture_comboBox.SelectedIndex == -1)
             {
                 titleError2_label.Visible = true;
             }
@@ -44,8 +44,15 @@ namespace AgroDictionary.Forms
                 titleError2_label.Visible = false;
             }
         }
-        private void search_button_Click(object sender, EventArgs e)
-        {
+        private void search_button_Click(object sender, EventArgs e) 
+        { 
+            if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text) || type_of_culture_comboBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("Будь ласка, введіть або оберіть обов'язкові поля: назву та вид рослини!!! ");
+                return;
+            }
+            result_field_listbox.Items.Clear();
+
             string NamePlant = name_of_culture_textbox.Text;
             string TypePlant = type_of_culture_comboBox.Text;
             string MaturTimePlant = matur_time_comboBox.Text;
@@ -69,6 +76,7 @@ namespace AgroDictionary.Forms
             else
             {
                 MessageBox.Show("На жаль, результатів не знайдено.");
+                result_field_listbox.Items.Clear();
             }
         }
         private void result_field_listbox_SelectedIndexChanged(object sender, EventArgs e)

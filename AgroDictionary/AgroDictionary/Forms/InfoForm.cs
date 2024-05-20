@@ -42,11 +42,18 @@ namespace AgroDictionary.Forms
 
         private void редагуватиРослинуToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            EditPage edit_page= new EditPage();
+            EditPage edit_page = new EditPage(plant, "data_of_plants.json");
 
-            DialogResult result = edit_page.ShowDialog();
-                
+            edit_page.Saved += EditForm_Saved;
+
+            edit_page.ShowDialog();
+
         }
-        
+        private void EditForm_Saved(object sender, EventArgs e)
+        {
+   
+            this.Close();
+        }
+
     }
 }

@@ -270,7 +270,7 @@
             title_searching_result.AutoSize = true;
             title_searching_result.Font = new Font("Sitka Banner", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             title_searching_result.ForeColor = Color.Snow;
-            title_searching_result.Location = new Point(336, 392);
+            title_searching_result.Location = new Point(326, 392);
             title_searching_result.Name = "title_searching_result";
             title_searching_result.Size = new Size(165, 49);
             title_searching_result.TabIndex = 27;
@@ -653,6 +653,7 @@
             // 
             name_of_culture_textbox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             name_of_culture_textbox.Location = new Point(172, 42);
+            name_of_culture_textbox.MaxLength = 30;
             name_of_culture_textbox.Name = "name_of_culture_textbox";
             name_of_culture_textbox.Size = new Size(233, 29);
             name_of_culture_textbox.TabIndex = 6;
@@ -740,7 +741,8 @@
             MainMenuStrip = menuStrip_of_mainpage;
             MinimumSize = new Size(832, 670);
             Name = "MainPage";
-            Text = "MainPage";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Головна сторінка";
             menuStrip_of_mainpage.ResumeLayout(false);
             menuStrip_of_mainpage.PerformLayout();
             panel2.ResumeLayout(false);

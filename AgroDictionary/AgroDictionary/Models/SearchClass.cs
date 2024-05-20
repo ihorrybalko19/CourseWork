@@ -22,7 +22,13 @@ namespace AgroDictionary.Models
 
             foreach (var item in plants)
             {
-                if (item.Name.Equals(User_Name, StringComparison.OrdinalIgnoreCase) && item.Type.Equals(User_Type, StringComparison.OrdinalIgnoreCase) && item.Maturation_Time.Equals(User_Maturation_Time, StringComparison.OrdinalIgnoreCase) && item.Weight.Equals(User_Weight, StringComparison.OrdinalIgnoreCase) && item.Hybridity.Equals(User_Hybridity, StringComparison.OrdinalIgnoreCase) && item.Expiration_Date.Equals(User_Expiration_Date, StringComparison.OrdinalIgnoreCase))
+                
+                bool extrafield_MaturationTime = string.IsNullOrEmpty(User_Maturation_Time) || item.Maturation_Time.Equals(User_Maturation_Time, StringComparison.OrdinalIgnoreCase);
+                bool extrafield_Weight = string.IsNullOrEmpty(User_Weight) || item.Weight.Equals(User_Weight, StringComparison.OrdinalIgnoreCase);
+                bool extrafield_Hybridity = string.IsNullOrEmpty(User_Hybridity) || item.Hybridity.Equals(User_Hybridity, StringComparison.OrdinalIgnoreCase);
+                bool extrafield_ExpirationDate = string.IsNullOrEmpty(User_Expiration_Date) || item.Expiration_Date.Equals(User_Expiration_Date, StringComparison.OrdinalIgnoreCase);
+
+                if (item.Name.Equals(User_Name, StringComparison.OrdinalIgnoreCase) && item.Type.Equals(User_Type, StringComparison.OrdinalIgnoreCase) && extrafield_MaturationTime && extrafield_Weight && extrafield_Hybridity && extrafield_ExpirationDate)
                 {
                     rightplants.Add(item);
                 }

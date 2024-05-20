@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox2 = new TextBox();
+            description_field_textBox = new TextBox();
             label13 = new Label();
             panel2 = new Panel();
             comboBox1 = new ComboBox();
@@ -50,44 +50,50 @@
             label9 = new Label();
             label7 = new Label();
             panel1 = new Panel();
-            comboBox7 = new ComboBox();
+            titleError_label = new Label();
+            hybridity_of_culture_comboBox = new ComboBox();
             label8 = new Label();
             label17 = new Label();
-            comboBox2 = new ComboBox();
-            comboBox6 = new ComboBox();
-            comboBox5 = new ComboBox();
-            comboBox4 = new ComboBox();
+            exp_date_comboBox = new ComboBox();
+            fetal_weight_comboBox = new ComboBox();
+            matur_time_comboBox = new ComboBox();
+            type_of_culture_comboBox = new ComboBox();
             label2 = new Label();
             label6 = new Label();
-            textBox1 = new TextBox();
+            name_of_culture_textbox = new TextBox();
             label4 = new Label();
             label3 = new Label();
             label5 = new Label();
-            button2 = new Button();
-            button3 = new Button();
+            cancel_button = new Button();
+            save_button = new Button();
             label1 = new Label();
+            titleError_label1 = new Label();
+            panel3 = new Panel();
             panel2.SuspendLayout();
             panel9.SuspendLayout();
             panel6.SuspendLayout();
             panel7.SuspendLayout();
             panel4.SuspendLayout();
             panel1.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
-            // textBox2
+            // description_field_textBox
             // 
-            textBox2.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(76, 386);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(723, 29);
-            textBox2.TabIndex = 25;
+            description_field_textBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            description_field_textBox.Location = new Point(71, 378);
+            description_field_textBox.Multiline = true;
+            description_field_textBox.Name = "description_field_textBox";
+            description_field_textBox.ScrollBars = ScrollBars.Vertical;
+            description_field_textBox.Size = new Size(723, 63);
+            description_field_textBox.TabIndex = 25;
             // 
             // label13
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.Snow;
-            label13.Location = new Point(20, 386);
+            label13.Location = new Point(15, 359);
             label13.Name = "label13";
             label13.Size = new Size(50, 26);
             label13.TabIndex = 26;
@@ -102,7 +108,7 @@
             panel2.Controls.Add(panel7);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(label7);
-            panel2.Location = new Point(442, 59);
+            panel2.Location = new Point(437, 51);
             panel2.Name = "panel2";
             panel2.Size = new Size(357, 305);
             panel2.TabIndex = 28;
@@ -314,34 +320,47 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(comboBox7);
+            panel1.Controls.Add(titleError_label);
+            panel1.Controls.Add(hybridity_of_culture_comboBox);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(label17);
-            panel1.Controls.Add(comboBox2);
-            panel1.Controls.Add(comboBox6);
-            panel1.Controls.Add(comboBox5);
-            panel1.Controls.Add(comboBox4);
+            panel1.Controls.Add(exp_date_comboBox);
+            panel1.Controls.Add(fetal_weight_comboBox);
+            panel1.Controls.Add(matur_time_comboBox);
+            panel1.Controls.Add(type_of_culture_comboBox);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label6);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(name_of_culture_textbox);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label5);
-            panel1.Location = new Point(12, 59);
+            panel1.Location = new Point(7, 51);
             panel1.Name = "panel1";
             panel1.Size = new Size(424, 305);
             panel1.TabIndex = 27;
             // 
-            // comboBox7
+            // titleError_label
             // 
-            comboBox7.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox7.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBox7.FormattingEnabled = true;
-            comboBox7.Items.AddRange(new object[] { "наявна", "відсутня" });
-            comboBox7.Location = new Point(172, 207);
-            comboBox7.Name = "comboBox7";
-            comboBox7.Size = new Size(233, 32);
-            comboBox7.TabIndex = 21;
+            titleError_label.AutoSize = true;
+            titleError_label.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleError_label.ForeColor = Color.Red;
+            titleError_label.Location = new Point(407, 43);
+            titleError_label.Name = "titleError_label";
+            titleError_label.Size = new Size(20, 23);
+            titleError_label.TabIndex = 30;
+            titleError_label.Text = "*";
+            titleError_label.Visible = false;
+            // 
+            // hybridity_of_culture_comboBox
+            // 
+            hybridity_of_culture_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            hybridity_of_culture_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            hybridity_of_culture_comboBox.FormattingEnabled = true;
+            hybridity_of_culture_comboBox.Items.AddRange(new object[] { "наявна", "відсутня" });
+            hybridity_of_culture_comboBox.Location = new Point(172, 207);
+            hybridity_of_culture_comboBox.Name = "hybridity_of_culture_comboBox";
+            hybridity_of_culture_comboBox.Size = new Size(233, 32);
+            hybridity_of_culture_comboBox.TabIndex = 21;
             // 
             // label8
             // 
@@ -365,49 +384,50 @@
             label17.TabIndex = 15;
             label17.Text = "Термін зберігання";
             // 
-            // comboBox2
+            // exp_date_comboBox
             // 
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "від 3-3,5 місяців", "до 4 місяців", "від 4-5 місяців", "понад 5 місяців" });
-            comboBox2.Location = new Point(172, 256);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(233, 32);
-            comboBox2.TabIndex = 13;
+            exp_date_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            exp_date_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            exp_date_comboBox.FormattingEnabled = true;
+            exp_date_comboBox.Items.AddRange(new object[] { "від 3-3,5 місяців", "до 4 місяців", "від 4-5 місяців", "понад 5 місяців" });
+            exp_date_comboBox.Location = new Point(172, 256);
+            exp_date_comboBox.Name = "exp_date_comboBox";
+            exp_date_comboBox.Size = new Size(233, 32);
+            exp_date_comboBox.TabIndex = 13;
             // 
-            // comboBox6
+            // fetal_weight_comboBox
             // 
-            comboBox6.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox6.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBox6.FormattingEnabled = true;
-            comboBox6.Items.AddRange(new object[] { "100 гр", "200 гр", "300 гр", "понад 300 гр." });
-            comboBox6.Location = new Point(172, 162);
-            comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(233, 32);
-            comboBox6.TabIndex = 19;
+            fetal_weight_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            fetal_weight_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            fetal_weight_comboBox.FormattingEnabled = true;
+            fetal_weight_comboBox.Items.AddRange(new object[] { "100 гр", "200 гр", "300 гр", "понад 300 гр." });
+            fetal_weight_comboBox.Location = new Point(172, 162);
+            fetal_weight_comboBox.Name = "fetal_weight_comboBox";
+            fetal_weight_comboBox.Size = new Size(233, 32);
+            fetal_weight_comboBox.TabIndex = 19;
             // 
-            // comboBox5
+            // matur_time_comboBox
             // 
-            comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox5.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Items.AddRange(new object[] { "ранньостиглі", "середньостиглі", "пізньостиглі" });
-            comboBox5.Location = new Point(172, 124);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(233, 32);
-            comboBox5.TabIndex = 18;
+            matur_time_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            matur_time_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            matur_time_comboBox.FormattingEnabled = true;
+            matur_time_comboBox.Items.AddRange(new object[] { "ранньостиглі", "середньостиглі", "пізньостиглі" });
+            matur_time_comboBox.Location = new Point(172, 124);
+            matur_time_comboBox.Name = "matur_time_comboBox";
+            matur_time_comboBox.Size = new Size(233, 32);
+            matur_time_comboBox.TabIndex = 18;
             // 
-            // comboBox4
+            // type_of_culture_comboBox
             // 
-            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox4.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "помідор", "огірок", "картопля", "перець", "цибуля ", "капуста" });
-            comboBox4.Location = new Point(172, 83);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(233, 32);
-            comboBox4.TabIndex = 17;
+            type_of_culture_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            type_of_culture_comboBox.Enabled = false;
+            type_of_culture_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            type_of_culture_comboBox.FormattingEnabled = true;
+            type_of_culture_comboBox.Items.AddRange(new object[] { "помідор", "огірок", "картопля", "перець", "цибуля ", "капуста" });
+            type_of_culture_comboBox.Location = new Point(172, 83);
+            type_of_culture_comboBox.Name = "type_of_culture_comboBox";
+            type_of_culture_comboBox.Size = new Size(233, 32);
+            type_of_culture_comboBox.TabIndex = 17;
             // 
             // label2
             // 
@@ -418,7 +438,7 @@
             label2.Name = "label2";
             label2.Size = new Size(115, 26);
             label2.TabIndex = 16;
-            label2.Text = "Тип культури";
+            label2.Text = "Вид культури";
             label2.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label6
@@ -432,13 +452,14 @@
             label6.TabIndex = 10;
             label6.Text = "Основні параметри";
             // 
-            // textBox1
+            // name_of_culture_textbox
             // 
-            textBox1.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(172, 42);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(233, 29);
-            textBox1.TabIndex = 6;
+            name_of_culture_textbox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            name_of_culture_textbox.Location = new Point(172, 42);
+            name_of_culture_textbox.MaxLength = 50;
+            name_of_culture_textbox.Name = "name_of_culture_textbox";
+            name_of_culture_textbox.Size = new Size(233, 29);
+            name_of_culture_textbox.TabIndex = 6;
             // 
             // label4
             // 
@@ -473,52 +494,77 @@
             label5.TabIndex = 1;
             label5.Text = "Назва культури";
             // 
-            // button2
+            // cancel_button
             // 
-            button2.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
-            button2.Location = new Point(686, 455);
-            button2.Name = "button2";
-            button2.Size = new Size(110, 29);
-            button2.TabIndex = 22;
-            button2.Text = "Відмінити";
-            button2.UseVisualStyleBackColor = true;
+            cancel_button.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
+            cancel_button.Location = new Point(681, 447);
+            cancel_button.Name = "cancel_button";
+            cancel_button.Size = new Size(110, 29);
+            cancel_button.TabIndex = 22;
+            cancel_button.Text = "Відмінити";
+            cancel_button.UseVisualStyleBackColor = true;
+            cancel_button.Click += cancel_button_Click;
             // 
-            // button3
+            // save_button
             // 
-            button3.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
-            button3.Location = new Point(586, 455);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 24;
-            button3.Text = "Зберегти";
-            button3.UseVisualStyleBackColor = true;
+            save_button.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
+            save_button.Location = new Point(581, 447);
+            save_button.Name = "save_button";
+            save_button.Size = new Size(94, 29);
+            save_button.TabIndex = 24;
+            save_button.Text = "Зберегти";
+            save_button.UseVisualStyleBackColor = true;
+            save_button.Click += save_button_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Sitka Banner", 16.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Snow;
-            label1.Location = new Point(260, 9);
+            label1.Location = new Point(290, 1);
             label1.Name = "label1";
             label1.Size = new Size(266, 39);
             label1.TabIndex = 23;
             label1.Text = "Редагування рослини";
+            // 
+            // titleError_label1
+            // 
+            titleError_label1.AutoSize = true;
+            titleError_label1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleError_label1.ForeColor = Color.Red;
+            titleError_label1.Location = new Point(37, 385);
+            titleError_label1.Name = "titleError_label1";
+            titleError_label1.Size = new Size(20, 23);
+            titleError_label1.TabIndex = 30;
+            titleError_label1.Text = "*";
+            titleError_label1.Visible = false;
+            // 
+            // panel3
+            // 
+            panel3.Anchor = AnchorStyles.Top;
+            panel3.Controls.Add(titleError_label1);
+            panel3.Controls.Add(description_field_textBox);
+            panel3.Controls.Add(label13);
+            panel3.Controls.Add(panel2);
+            panel3.Controls.Add(panel1);
+            panel3.Controls.Add(cancel_button);
+            panel3.Controls.Add(save_button);
+            panel3.Controls.Add(label1);
+            panel3.Location = new Point(5, 8);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(803, 496);
+            panel3.TabIndex = 31;
             // 
             // EditPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.ForestGreen;
-            ClientSize = new Size(810, 511);
-            Controls.Add(textBox2);
-            Controls.Add(label13);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            Controls.Add(button2);
-            Controls.Add(button3);
-            Controls.Add(label1);
+            ClientSize = new Size(825, 511);
+            Controls.Add(panel3);
+            MinimumSize = new Size(843, 558);
             Name = "EditPage";
-            Text = "EditPage";
+            Text = "Сторінка редагування";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel9.ResumeLayout(false);
@@ -531,13 +577,14 @@
             panel4.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox2;
+        private TextBox description_field_textBox;
         private Label label13;
         private Panel panel2;
         private ComboBox comboBox1;
@@ -559,21 +606,24 @@
         private Label label9;
         private Label label7;
         private Panel panel1;
-        private ComboBox comboBox7;
+        private ComboBox hybridity_of_culture_comboBox;
         private Label label8;
         private Label label17;
-        private ComboBox comboBox2;
-        private ComboBox comboBox6;
-        private ComboBox comboBox5;
-        private ComboBox comboBox4;
+        private ComboBox exp_date_comboBox;
+        private ComboBox fetal_weight_comboBox;
+        private ComboBox matur_time_comboBox;
+        private ComboBox type_of_culture_comboBox;
         private Label label2;
         private Label label6;
-        private TextBox textBox1;
+        private TextBox name_of_culture_textbox;
         private Label label4;
         private Label label3;
         private Label label5;
-        private Button button2;
-        private Button button3;
+        private Button cancel_button;
+        private Button save_button;
         private Label label1;
+        private Label titleError_label;
+        private Label titleError_label1;
+        private Panel panel3;
     }
 }
