@@ -19,5 +19,6 @@ C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\D
 C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Debug\net8.0-windows\AgroDictionary.csproj.AssemblyReference.cache
 C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Debug\net8.0-windows\AgroDict.7FEABB44.Up2Date
-C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Debug\net8.0-windows\AgroDictionary.Forms.InfoForm.resources
 C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Debug\net8.0-windows\AgroDictionary.Forms.EditPage.resources
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Debug\net8.0-windows\AgroDictionary.Forms.AddPage.resources
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Debug\net8.0-windows\AgroDictionary.Forms.InfoPage.resources

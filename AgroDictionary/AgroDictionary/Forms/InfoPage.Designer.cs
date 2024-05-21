@@ -1,6 +1,6 @@
 ﻿namespace AgroDictionary.Forms
 {
-    partial class InfoForm
+    partial class InfoPage
     {
         /// <summary>
         /// Required designer variable.
@@ -394,7 +394,7 @@
             panel1.Size = new Size(752, 478);
             panel1.TabIndex = 52;
             // 
-            // InfoForm
+            // InfoPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -404,7 +404,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             MinimumSize = new Size(779, 560);
-            Name = "InfoForm";
+            Name = "InfoPage";
             Text = "Інформаційна сторінка";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

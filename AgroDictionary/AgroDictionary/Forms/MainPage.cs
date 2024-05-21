@@ -44,8 +44,8 @@ namespace AgroDictionary.Forms
                 titleError2_label.Visible = false;
             }
         }
-        private void search_button_Click(object sender, EventArgs e) 
-        { 
+        private void search_button_Click(object sender, EventArgs e)
+        {
             if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text) || type_of_culture_comboBox.SelectedIndex == -1)
             {
                 MessageBox.Show("Будь ласка, введіть або оберіть обов'язкові поля: назву та вид рослини!!! ");
@@ -81,19 +81,19 @@ namespace AgroDictionary.Forms
         }
         private void result_field_listbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-                if (result_field_listbox.SelectedItem != null)
-                { 
-                    
-                    string selectedplant = result_field_listbox.SelectedItem.ToString();
+            if (result_field_listbox.SelectedItem != null)
+            {
 
-                    string jsonString = selectedplant.Substring(selectedplant.IndexOf("                                                                                                                                                                    ") + 1).Trim();
+                string selectedplant = result_field_listbox.SelectedItem.ToString();
 
-                    Plant selectedPlant = JsonConvert.DeserializeObject<Plant>(jsonString);
+                string jsonString = selectedplant.Substring(selectedplant.IndexOf("                                                                                                                                                                    ") + 1).Trim();
 
-                    ShowPlantInfo(selectedPlant);
+                Plant selectedPlant = JsonConvert.DeserializeObject<Plant>(jsonString);
 
-                    result_field_listbox.Items.Clear();
-                }
+                ShowPlantInfo(selectedPlant);
+
+                result_field_listbox.Items.Clear();
+            }
         }
         private void clear_button_Click(object sender, EventArgs e)
         {
@@ -104,13 +104,20 @@ namespace AgroDictionary.Forms
             hybridity_of_culture_comboBox.SelectedIndex = -1;
             exp_date_comboBox.SelectedIndex = -1;
         }
-        
+
         private void ShowPlantInfo(Plant plant)
         {
-            
-            InfoForm plantDetailsForm = new InfoForm(plant);
 
-            plantDetailsForm.ShowDialog();
+            InfoPage infopage = new InfoPage(plant);
+
+            infopage.ShowDialog();
+        }
+
+        private void додатиРослинуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddPage addpage = new AddPage();
+
+            addpage.ShowDialog();
         }
     }
 }

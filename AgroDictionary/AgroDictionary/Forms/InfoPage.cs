@@ -13,16 +13,16 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AgroDictionary.Forms
 {
-    public partial class InfoForm : Form
+    public partial class InfoPage : Form
     {
-        public InfoForm()
+        public InfoPage()
         {
             InitializeComponent();
         }
 
         private Plant plant;
 
-        public InfoForm(Plant plant)
+        public InfoPage(Plant plant)
         {
             InitializeComponent();
             this.plant = plant;
