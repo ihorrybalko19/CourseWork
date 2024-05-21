@@ -15,21 +15,6 @@
     "Description": "црцррцр"
   },
   {
-    "Id": "2",
-    "Name": "ай",
-    "Type": "помідор",
-    "Maturation_Time": "ранньостиглі",
-    "Weight": "300 гр",
-    "Hybridity": "відсутня",
-    "Expiration_Date": "від 3-3,5 місяців",
-    "Type_of_Pollution": null,
-    "Is_Cuboid": null,
-    "Is_Indeterminate": null,
-    "Potential_Harvest": null,
-    "Starch_Content": null,
-    "Description": "ь"
-  },
-  {
     "Id": "3",
     "Name": "Слов'янка",
     "Type": "картопля",
@@ -58,21 +43,6 @@
     "Potential_Harvest": null,
     "Starch_Content": null,
     "Description": "4о4рекйкеококео"
-  },
-  {
-    "Id": "82109ab2-6bf5-4fdc-989d-8dd09b92dfd3",
-    "Name": "qwerty",
-    "Type": "помідор",
-    "Maturation_Time": "ранньостиглі",
-    "Weight": "100 гр",
-    "Hybridity": "наявна",
-    "Expiration_Date": "від 3-3,5 місяців",
-    "Type_of_Pollution": null,
-    "Is_Cuboid": null,
-    "Is_Indeterminate": null,
-    "Potential_Harvest": null,
-    "Starch_Content": null,
-    "Description": "rhrhdrhdrrdhdrh"
   },
   {
     "Id": "d57748ec-4e4d-4ce4-83fe-27574246ff8d",

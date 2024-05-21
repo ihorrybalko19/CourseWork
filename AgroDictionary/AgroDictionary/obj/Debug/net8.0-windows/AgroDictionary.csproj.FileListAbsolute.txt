@@ -22,3 +22,4 @@ C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\D
 C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Debug\net8.0-windows\AgroDictionary.Forms.EditPage.resources
 C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Debug\net8.0-windows\AgroDictionary.Forms.AddPage.resources
 C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Debug\net8.0-windows\AgroDictionary.Forms.InfoPage.resources
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Debug\net8.0-windows\AgroDictionary.Forms.DeletePage.resources

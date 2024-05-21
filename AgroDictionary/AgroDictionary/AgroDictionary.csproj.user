@@ -4,6 +4,9 @@
     <Compile Update="Forms\AddPage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\DeletePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\EditPage.cs">
       <SubType>Form</SubType>
     </Compile>

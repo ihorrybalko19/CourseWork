@@ -9,13 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AgroDictionary.Forms
 {
-    public partial class MainPage : Form
+    public partial class DeletePage : Form
     {
-        public MainPage()
+        public DeletePage()
         {
             InitializeComponent();
             result_field_listbox.SelectedIndexChanged += result_field_listbox_SelectedIndexChanged;
@@ -83,18 +82,42 @@ namespace AgroDictionary.Forms
         {
             if (result_field_listbox.SelectedItem != null)
             {
-
                 string selectedplant = result_field_listbox.SelectedItem.ToString();
 
-                string jsonString = selectedplant.Substring(selectedplant.IndexOf("                                                                                                                                                                    ") + 1).Trim();
+                string json_String = selectedplant.Substring(selectedplant.IndexOf("                                                                                                                                                                    ") + 1).Trim();
 
-                Plant selectedPlant = JsonConvert.DeserializeObject<Plant>(jsonString);
+                Plant selected_Plant = JsonConvert.DeserializeObject<Plant>(json_String);
 
-                ShowPlantInfo(selectedPlant);
+                DialogResult resultop = MessageBox.Show("Ви впевнені, що хочете видалити рослину?", "Підтвердження видалення", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                result_field_listbox.Items.Clear();
+                if (resultop == DialogResult.Yes)
+                {
+                    string json = File.ReadAllText("data_of_plants.json");
+
+                    List<Plant> all_Plants = JsonConvert.DeserializeObject<List<Plant>>(json);
+
+                    DeletePlant(selected_Plant, all_Plants);
+
+                    MessageBox.Show("Вітаю. Ваша рослина була успішно видалена!!!");
+                }
             }
         }
+        private void DeletePlant(Plant deleted_Plant, List<Plant> all_Plants)
+        {
+            int index = all_Plants.FindIndex(p => p.Id == deleted_Plant.Id);
+
+            if (index != -1)
+            {
+                all_Plants.RemoveAt(index);
+
+                string updated_JSON = JsonConvert.SerializeObject(all_Plants, Formatting.Indented);
+
+                File.WriteAllText("data_of_plants.json", updated_JSON);
+
+                result_field_listbox.Items.Remove(result_field_listbox.SelectedItem);
+            }
+        }
+
         private void clear_button_Click(object sender, EventArgs e)
         {
             name_of_culture_textbox.Text = "";
@@ -103,27 +126,6 @@ namespace AgroDictionary.Forms
             fetal_weight_comboBox.SelectedIndex = -1;
             hybridity_of_culture_comboBox.SelectedIndex = -1;
             exp_date_comboBox.SelectedIndex = -1;
-        }
-
-        private void ShowPlantInfo(Plant plant)
-        {
-
-            InfoPage infopage = new InfoPage(plant);
-
-            infopage.ShowDialog();
-        }
-
-        private void додатиРослинуToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AddPage addpage = new AddPage();
-
-            addpage.ShowDialog();
-        }
-
-        private void видалитиРослинуToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DeletePage deletePage = new DeletePage();
-            deletePage.ShowDialog();
         }
     }
 }

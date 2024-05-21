@@ -497,7 +497,7 @@
             // cancel_button
             // 
             cancel_button.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
-            cancel_button.Location = new Point(681, 447);
+            cancel_button.Location = new Point(684, 447);
             cancel_button.Name = "cancel_button";
             cancel_button.Size = new Size(110, 29);
             cancel_button.TabIndex = 22;
@@ -508,7 +508,7 @@
             // save_button
             // 
             save_button.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
-            save_button.Location = new Point(581, 447);
+            save_button.Location = new Point(584, 447);
             save_button.Name = "save_button";
             save_button.Size = new Size(94, 29);
             save_button.TabIndex = 24;
@@ -519,11 +519,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Sitka Banner", 16.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Sitka Banner", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Snow;
-            label1.Location = new Point(290, 1);
+            label1.Location = new Point(277, 5);
             label1.Name = "label1";
-            label1.Size = new Size(266, 39);
+            label1.Size = new Size(299, 43);
             label1.TabIndex = 23;
             label1.Text = "Редагування рослини";
             // 
@@ -552,7 +552,7 @@
             panel3.Controls.Add(label1);
             panel3.Location = new Point(5, 8);
             panel3.Name = "panel3";
-            panel3.Size = new Size(803, 496);
+            panel3.Size = new Size(803, 491);
             panel3.TabIndex = 31;
             // 
             // EditPage
@@ -560,9 +560,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.ForestGreen;
-            ClientSize = new Size(825, 511);
+            ClientSize = new Size(825, 503);
             Controls.Add(panel3);
-            MinimumSize = new Size(843, 558);
+            MinimumSize = new Size(843, 550);
             Name = "EditPage";
             Text = "Сторінка редагування";
             panel2.ResumeLayout(false);

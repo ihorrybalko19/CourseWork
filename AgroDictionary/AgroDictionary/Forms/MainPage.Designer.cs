@@ -248,6 +248,7 @@
             видалитиРослинуToolStripMenuItem.Name = "видалитиРослинуToolStripMenuItem";
             видалитиРослинуToolStripMenuItem.Size = new Size(243, 26);
             видалитиРослинуToolStripMenuItem.Text = "Видалити рослину";
+            видалитиРослинуToolStripMenuItem.Click += видалитиРослинуToolStripMenuItem_Click;
             // 
             // селекціонерствоToolStripMenuItem
             // 
@@ -317,7 +318,7 @@
             // clear_button
             // 
             clear_button.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            clear_button.Location = new Point(256, 294);
+            clear_button.Location = new Point(260, 294);
             clear_button.Name = "clear_button";
             clear_button.Size = new Size(94, 29);
             clear_button.TabIndex = 19;
@@ -464,7 +465,7 @@
             // search_button
             // 
             search_button.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            search_button.Location = new Point(150, 294);
+            search_button.Location = new Point(149, 294);
             search_button.Name = "search_button";
             search_button.Size = new Size(94, 29);
             search_button.TabIndex = 16;
