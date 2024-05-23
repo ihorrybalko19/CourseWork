@@ -36,6 +36,11 @@ namespace AgroDictionary.Forms
             fetal_weight_label.Text = plant.Weight;
             hybridity_of_culture_label.Text = plant.Hybridity;
             exp_date_label.Text = plant.Expiration_Date;
+            pollination_type_label.Text = plant.Type_of_Pollution;
+            cuboid_label.Text = plant.Is_Cuboid;
+            indeterminate_label.Text = plant.Is_Indeterminate;
+            potential_of_harvest_label.Text = plant.Potential_Harvest;
+            starch_content_label.Text = plant.Starch_Content;
             description_of_culture_textbox.Text = plant.Description;
 
         }

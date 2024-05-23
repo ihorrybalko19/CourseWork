@@ -26,7 +26,7 @@ namespace AgroDictionary.Forms
             description_field_textBox.Validating += description_field_textBox_Validating;
         }
 
-        private void name_of_culture_textbox_Validating(object sender, CancelEventArgs e)
+        private void name_of_culture_textbox_Validating(object? sender, CancelEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text))
             {

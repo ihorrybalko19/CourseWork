@@ -52,8 +52,8 @@
             label12 = new Label();
             label5 = new Label();
             pollination_type_label = new Label();
-            cyboid_label = new Label();
-            indeterminacy_label = new Label();
+            cuboid_label = new Label();
+            indeterminate_label = new Label();
             starch_content_label = new Label();
             potential_of_harvest_label = new Label();
             panel1 = new Panel();
@@ -317,27 +317,27 @@
             pollination_type_label.TabIndex = 46;
             pollination_type_label.Text = " ";
             // 
-            // cyboid_label
+            // cuboid_label
             // 
-            cyboid_label.AutoSize = true;
-            cyboid_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
-            cyboid_label.ForeColor = Color.Snow;
-            cyboid_label.Location = new Point(161, 323);
-            cyboid_label.Name = "cyboid_label";
-            cyboid_label.Size = new Size(16, 26);
-            cyboid_label.TabIndex = 47;
-            cyboid_label.Text = " ";
+            cuboid_label.AutoSize = true;
+            cuboid_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
+            cuboid_label.ForeColor = Color.Snow;
+            cuboid_label.Location = new Point(161, 323);
+            cuboid_label.Name = "cuboid_label";
+            cuboid_label.Size = new Size(16, 26);
+            cuboid_label.TabIndex = 47;
+            cuboid_label.Text = " ";
             // 
-            // indeterminacy_label
+            // indeterminate_label
             // 
-            indeterminacy_label.AutoSize = true;
-            indeterminacy_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
-            indeterminacy_label.ForeColor = Color.Snow;
-            indeterminacy_label.Location = new Point(161, 364);
-            indeterminacy_label.Name = "indeterminacy_label";
-            indeterminacy_label.Size = new Size(16, 26);
-            indeterminacy_label.TabIndex = 48;
-            indeterminacy_label.Text = " ";
+            indeterminate_label.AutoSize = true;
+            indeterminate_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
+            indeterminate_label.ForeColor = Color.Snow;
+            indeterminate_label.Location = new Point(161, 364);
+            indeterminate_label.Name = "indeterminate_label";
+            indeterminate_label.Size = new Size(16, 26);
+            indeterminate_label.TabIndex = 48;
+            indeterminate_label.Text = " ";
             // 
             // starch_content_label
             // 
@@ -367,8 +367,8 @@
             panel1.Controls.Add(potential_of_harvest_label);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(starch_content_label);
-            panel1.Controls.Add(indeterminacy_label);
-            panel1.Controls.Add(cyboid_label);
+            panel1.Controls.Add(indeterminate_label);
+            panel1.Controls.Add(cuboid_label);
             panel1.Controls.Add(pollination_type_label);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label12);
@@ -439,8 +439,8 @@
         private Label label12;
         private Label label5;
         private Label pollination_type_label;
-        private Label cyboid_label;
-        private Label indeterminacy_label;
+        private Label cuboid_label;
+        private Label indeterminate_label;
         private Label starch_content_label;
         private Label potential_of_harvest_label;
         private Panel panel1;

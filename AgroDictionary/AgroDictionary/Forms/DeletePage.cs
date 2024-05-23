@@ -17,52 +17,249 @@ namespace AgroDictionary.Forms
         public DeletePage()
         {
             InitializeComponent();
+            name_of_culture_textbox.KeyPress += name_of_culture_textbox_KeyPress;
             result_field_listbox.SelectedIndexChanged += result_field_listbox_SelectedIndexChanged;
-            name_of_culture_textbox.Validating += name_of_culture_textbox_Validating;
-            type_of_culture_comboBox.Validating += type_of_culture_comboBox_Validating;
+            type_of_culture_comboBox.SelectedIndexChanged += type_of_culture_comboBox_SelectedIndexChanged;
+            type_of_pollution_comboBox.SelectedIndexChanged += type_of_pollution_comboBox_SelectedIndexChanged;
+            cuboid_comboBox.SelectedIndexChanged += cuboid_comboBox_SelectedIndexChanged;
+            indeterminate_comboBox.SelectedIndexChanged += indeterminate_comboBox_SelectedIndexChanged;
+            shape_of_head_comboBox.SelectedIndexChanged += shape_of_head_comboBox_SelectedIndexChanged;
+            starch_content_comboBox.SelectedIndexChanged += starch_content_comboBox_SelectedIndexChanged;
+
         }
-        private void name_of_culture_textbox_Validating(object sender, CancelEventArgs e)
+        private void name_of_culture_textbox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text))
+            if (char.IsDigit(e.KeyChar))
             {
-                titleError_label.Visible = true;
-            }
-            else
-            {
-                titleError_label.Visible = false;
+                e.Handled = true;
+
+                MessageBox.Show("Введення чисел заборонено.",
+                "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        private void type_of_culture_comboBox_Validating(object sender, CancelEventArgs e)
+        private void type_of_culture_comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (type_of_culture_comboBox.SelectedIndex == -1)
+            if (type_of_culture_comboBox.SelectedItem == null)
             {
-                titleError2_label.Visible = true;
+                type_of_pollution_comboBox.Enabled = false;
+                cuboid_comboBox.Enabled = false;
+                indeterminate_comboBox.Enabled = false;
+                shape_of_head_comboBox.Enabled = false;
+                starch_content_comboBox.Enabled = false;
+                return;
             }
-            else
+
+            string selectedCultureType = type_of_culture_comboBox.SelectedItem.ToString().ToLower();
+
+            switch (selectedCultureType)
             {
-                titleError2_label.Visible = false;
+                case "огірок":
+                    type_of_pollution_comboBox.Enabled = true;
+                    type_of_pollution_comboBox.SelectedIndex = -1;
+                    cuboid_comboBox.Enabled = false;
+                    cuboid_comboBox.SelectedIndex = 0;
+                    indeterminate_comboBox.Enabled = false;
+                    indeterminate_comboBox.SelectedIndex = 0;
+                    potential_harvest_comboBox.Enabled = false;
+                    potential_harvest_comboBox.SelectedIndex = 0;
+                    starch_content_comboBox.Enabled = false;
+                    starch_content_comboBox.SelectedIndex = 0;
+                    break;
+                case "перець":
+                    cuboid_comboBox.Enabled = true;
+                    cuboid_comboBox.SelectedIndex = -1;
+                    type_of_pollution_comboBox.Enabled = false;
+                    type_of_pollution_comboBox.SelectedIndex = 0;
+                    indeterminate_comboBox.Enabled = false;
+                    indeterminate_comboBox.SelectedIndex = 0;
+                    potential_harvest_comboBox.Enabled = false;
+                    potential_harvest_comboBox.SelectedIndex = 0;
+                    starch_content_comboBox.Enabled = false;
+                    starch_content_comboBox.SelectedIndex = 0;
+                    break;
+                case "помідор":
+                    indeterminate_comboBox.Enabled = true;
+                    indeterminate_comboBox.SelectedIndex = -1;
+                    type_of_pollution_comboBox.Enabled = false;
+                    type_of_pollution_comboBox.SelectedIndex = 0;
+                    cuboid_comboBox.Enabled = false;
+                    cuboid_comboBox.SelectedIndex = 0;
+                    potential_harvest_comboBox.Enabled = false;
+                    potential_harvest_comboBox.SelectedIndex = 0;
+                    starch_content_comboBox.Enabled = false;
+                    starch_content_comboBox.SelectedIndex = 0;
+                    break;
+                case "капуста":
+                    shape_of_head_comboBox.Enabled = true;
+                    shape_of_head_comboBox.SelectedIndex = -1;
+                    type_of_pollution_comboBox.Enabled = false;
+                    type_of_pollution_comboBox.SelectedIndex = 0;
+                    cuboid_comboBox.Enabled = false;
+                    cuboid_comboBox.SelectedIndex = 0;
+                    indeterminate_comboBox.Enabled = false;
+                    indeterminate_comboBox.SelectedIndex = 0;
+                    starch_content_comboBox.Enabled = false;
+                    starch_content_comboBox.SelectedIndex = 0;
+                    break;
+                case "картопля":
+                    starch_content_comboBox.Enabled = true;
+                    starch_content_comboBox.SelectedIndex = -1;
+                    type_of_pollution_comboBox.Enabled = false;
+                    type_of_pollution_comboBox.SelectedIndex = 0;
+                    cuboid_comboBox.Enabled = false;
+                    cuboid_comboBox.SelectedIndex = 0;
+                    indeterminate_comboBox.Enabled = false;
+                    indeterminate_comboBox.SelectedIndex = 0;
+                    potential_harvest_comboBox.Enabled = false;
+                    potential_harvest_comboBox.SelectedIndex = 0;
+                    break;
             }
         }
+        private void type_of_pollution_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (type_of_pollution_comboBox.Enabled == true)
+            {
+
+                if (type_of_pollution_comboBox.SelectedItem != null &&
+                    type_of_pollution_comboBox.SelectedItem.ToString() == "категорія відсутня")
+                {
+                    MessageBox.Show("Неможливо вибрати 'категорія відсутня' для огірка.",
+                    "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    type_of_pollution_comboBox.SelectedIndex = -1;
+                }
+            }
+
+        }
+        private void cuboid_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cuboid_comboBox.Enabled == true)
+            {
+                if (cuboid_comboBox.SelectedItem != null &&
+                    cuboid_comboBox.SelectedItem.ToString() == "категорія відсутня")
+                {
+                    MessageBox.Show("Неможливо вибрати 'категорія відсутня' для перцю.",
+                    "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    cuboid_comboBox.SelectedIndex = -1;
+                }
+            }
+        }
+        private void indeterminate_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (indeterminate_comboBox.Enabled == true)
+            {
+                if (indeterminate_comboBox.SelectedItem != null &&
+                    indeterminate_comboBox.SelectedItem.ToString() == "категорія відсутня")
+                {
+                    MessageBox.Show("Неможливо вибрати 'категорія відсутня' для помідора.",
+                    "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    indeterminate_comboBox.SelectedIndex = -1;
+                }
+            }
+        }
+        private void shape_of_head_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (shape_of_head_comboBox.Enabled == true)
+            {
+                if (shape_of_head_comboBox.SelectedItem != null &&
+                    shape_of_head_comboBox.SelectedItem.ToString() == "категорія відсутня")
+                {
+                    MessageBox.Show("Неможливо вибрати 'категорія відсутня' для капусти."
+                        , "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    shape_of_head_comboBox.SelectedIndex = -1;
+                }
+            }
+        }
+        private void starch_content_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (starch_content_comboBox.Enabled == true)
+            {
+                if (starch_content_comboBox.SelectedItem != null &&
+                    starch_content_comboBox.SelectedItem.ToString() == "категорія відсутня")
+                {
+                    MessageBox.Show("Неможливо вибрати 'категорія відсутня' для картоплі."
+                        , "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    starch_content_comboBox.SelectedIndex = -1;
+                }
+            }
+        }
+
+
         private void search_button_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text) || type_of_culture_comboBox.SelectedIndex == -1)
+            if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text) ||
+               string.IsNullOrWhiteSpace(type_of_culture_comboBox.Text) ||
+               string.IsNullOrWhiteSpace(author_comboBox.Text) ||
+               string.IsNullOrWhiteSpace(matur_time_comboBox.Text) ||
+               string.IsNullOrWhiteSpace(fetal_weight_comboBox.Text) ||
+               string.IsNullOrWhiteSpace(hybridity_of_culture_comboBox.Text) ||
+               string.IsNullOrWhiteSpace(frost_resistance_comboBox.Text) ||
+               string.IsNullOrWhiteSpace(exp_date_comboBox.Text) ||
+               string.IsNullOrWhiteSpace(potential_harvest_comboBox.Text))
             {
-                MessageBox.Show("Будь ласка, введіть або оберіть обов'язкові поля: назву та вид рослини!!!");
-                return;
+                MessageBox.Show("Увага!!! Ви не ввели жоден параметр. Будь ласка, введіть а" +
+                    "бо виберіть хоча б один із основних параметрів", "Помилка введення",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             result_field_listbox.Items.Clear();
 
             string NamePlant = name_of_culture_textbox.Text;
+
             string TypePlant = type_of_culture_comboBox.Text;
+
+            string AuthorPlant = author_comboBox.Text;
+
             string MaturTimePlant = matur_time_comboBox.Text;
+
             string WeightPlant = fetal_weight_comboBox.Text;
+
             string HybridityPlant = hybridity_of_culture_comboBox.Text;
+
+            string FrostResistancePlant = frost_resistance_comboBox.Text;
+
             string ExpDatePlant = exp_date_comboBox.Text;
+
+            string PotentialHarvest = potential_harvest_comboBox.Text;
+
+            string TypePollutionPlant = string.Empty;
+
+            string CuboidPlant = string.Empty;
+
+            string IndeterminatePlant = string.Empty;
+
+            string ShapeHeadPlant = string.Empty;
+
+            string StarchContentPlant = string.Empty;
+
+            string selectedCultureType = type_of_culture_comboBox.SelectedItem.ToString();
+
+            switch (selectedCultureType)
+            {
+                case "огірок":
+                    TypePollutionPlant = type_of_pollution_comboBox.Text;
+                    break;
+                case "перець":
+                    CuboidPlant = cuboid_comboBox.Text;
+                    break;
+                case "помідор":
+                    IndeterminatePlant = indeterminate_comboBox.Text;
+                    break;
+                case "капуста":
+                    ShapeHeadPlant = shape_of_head_comboBox.Text;
+                    break;
+                case "картопля":
+                    StarchContentPlant = starch_content_comboBox.Text;
+                    break;
+            }
+
 
             SearchClass search = new SearchClass();
             search.Load_Data_From_JSON("data_of_plants.json");
 
-            List<Plant> searchresults = search.SearchInfo(NamePlant, TypePlant, MaturTimePlant, WeightPlant, HybridityPlant, ExpDatePlant);
+            List<Plant> searchresults = search.SearchInfo(NamePlant,
+                TypePlant, AuthorPlant, MaturTimePlant, WeightPlant,
+                HybridityPlant, FrostResistancePlant, ExpDatePlant,
+                PotentialHarvest, TypePollutionPlant, CuboidPlant,
+                IndeterminatePlant, ShapeHeadPlant, StarchContentPlant);
 
             if (searchresults.Count > 0)
             {
@@ -74,10 +271,17 @@ namespace AgroDictionary.Forms
             }
             else
             {
-                MessageBox.Show("На жаль, результатів не знайдено.");
+                MessageBox.Show("На жаль, результатів не знайдено. Примітка:" +
+                    " якщо ви шукали культуру за ім'ям та іншим параметром," +
+                    " то перевірте, чи немає у полі 'Ім'я культури' випадкових" +
+                    " пробілів. Якщо є, то приберіть їх будь ласка, щоб полегшити" +
+                    " пошук або введіть назву культури, якщо потрібно");
+
                 result_field_listbox.Items.Clear();
             }
         }
+  
+        
         private void result_field_listbox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (result_field_listbox.SelectedItem != null)
@@ -88,7 +292,9 @@ namespace AgroDictionary.Forms
 
                 Plant selected_Plant = JsonConvert.DeserializeObject<Plant>(json_String);
 
-                DialogResult resultop = MessageBox.Show("Ви впевнені, що хочете видалити рослину?", "Підтвердження видалення", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult resultop = MessageBox.Show("Ви впевнені, " +
+                    "що хочете видалити рослину?", "Підтвердження видалення"
+                    , MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (resultop == DialogResult.Yes)
                 {
@@ -98,7 +304,8 @@ namespace AgroDictionary.Forms
 
                     DeletePlant(selected_Plant, all_Plants);
 
-                    MessageBox.Show("Вітаю. Ваша рослина була успішно видалена!!!");
+                    MessageBox.Show("Вітаю. Рослина була успішно видалена!!!","Результат",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
@@ -121,11 +328,34 @@ namespace AgroDictionary.Forms
         private void clear_button_Click(object sender, EventArgs e)
         {
             name_of_culture_textbox.Text = "";
+
             type_of_culture_comboBox.SelectedIndex = -1;
+
+            author_comboBox.SelectedIndex = -1;
+
             matur_time_comboBox.SelectedIndex = -1;
+
             fetal_weight_comboBox.SelectedIndex = -1;
+
             hybridity_of_culture_comboBox.SelectedIndex = -1;
+
+            frost_resistance_comboBox.SelectedIndex = -1;
+
             exp_date_comboBox.SelectedIndex = -1;
+
+            potential_harvest_comboBox.SelectedIndex = -1;
+
+            type_of_pollution_comboBox.SelectedIndex = -1;
+
+            cuboid_comboBox.SelectedIndex = -1;
+
+            indeterminate_comboBox.SelectedIndex = -1;
+
+            shape_of_head_comboBox.SelectedItem = -1;
+
+            starch_content_comboBox.SelectedIndex = -1;
+
+            result_field_listbox.Items.Clear();
         }
     }
 }

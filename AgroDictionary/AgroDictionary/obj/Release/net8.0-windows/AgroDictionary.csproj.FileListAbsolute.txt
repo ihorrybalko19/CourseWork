@@ -1,0 +1,13 @@
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.csproj.AssemblyReference.cache
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.Forms.AddPage.resources
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.Forms.DeletePage.resources
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.Forms.EditPage.resources
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.Forms.InfoPage.resources
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.Forms.MainPage.resources
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.Properties.Resources.resources
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.csproj.GenerateResource.cache
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.AssemblyInfoInputs.cache
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.AssemblyInfo.cs
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.csproj.CoreCompileInputs.cache
+C:\Users\VivoBook 15\Desktop\Course_WORK_RIO\AgroDictionary\AgroDictionary\obj\Release\net8.0-windows\AgroDictionary.sourcelink.json
