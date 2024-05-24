@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgroDictionary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5fb154e1cba756fb03ede056c15a4ff89c2137d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a755e0dce4b15bc164ba674fc9bb5a125dd99f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgroDictionary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgroDictionary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
