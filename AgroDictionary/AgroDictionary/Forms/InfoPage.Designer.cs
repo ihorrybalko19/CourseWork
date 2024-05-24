@@ -51,12 +51,18 @@
             label11 = new Label();
             label12 = new Label();
             label5 = new Label();
-            pollination_type_label = new Label();
             cuboid_label = new Label();
-            indeterminate_label = new Label();
             starch_content_label = new Label();
             potential_of_harvest_label = new Label();
             panel1 = new Panel();
+            pollination_type_label = new Label();
+            shape_of_head_label = new Label();
+            label16 = new Label();
+            frost_resistance_label = new Label();
+            label15 = new Label();
+            author_label = new Label();
+            label14 = new Label();
+            indeterminate_label = new Label();
             menuStrip1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -66,7 +72,7 @@
             exp_date_label.AutoSize = true;
             exp_date_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             exp_date_label.ForeColor = Color.Snow;
-            exp_date_label.Location = new Point(161, 242);
+            exp_date_label.Location = new Point(168, 321);
             exp_date_label.Name = "exp_date_label";
             exp_date_label.Size = new Size(16, 26);
             exp_date_label.TabIndex = 38;
@@ -77,7 +83,7 @@
             hybridity_of_culture_label.AutoSize = true;
             hybridity_of_culture_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             hybridity_of_culture_label.ForeColor = Color.Snow;
-            hybridity_of_culture_label.Location = new Point(161, 202);
+            hybridity_of_culture_label.Location = new Point(168, 247);
             hybridity_of_culture_label.Name = "hybridity_of_culture_label";
             hybridity_of_culture_label.Size = new Size(16, 26);
             hybridity_of_culture_label.TabIndex = 37;
@@ -88,7 +94,7 @@
             fetal_weight_label.AutoSize = true;
             fetal_weight_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             fetal_weight_label.ForeColor = Color.Snow;
-            fetal_weight_label.Location = new Point(161, 165);
+            fetal_weight_label.Location = new Point(168, 206);
             fetal_weight_label.Name = "fetal_weight_label";
             fetal_weight_label.Size = new Size(16, 26);
             fetal_weight_label.TabIndex = 36;
@@ -99,7 +105,7 @@
             matur_time_label.AutoSize = true;
             matur_time_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             matur_time_label.ForeColor = Color.Snow;
-            matur_time_label.Location = new Point(161, 125);
+            matur_time_label.Location = new Point(168, 166);
             matur_time_label.Name = "matur_time_label";
             matur_time_label.Size = new Size(16, 26);
             matur_time_label.TabIndex = 35;
@@ -110,7 +116,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.Snow;
-            label8.Location = new Point(53, 202);
+            label8.Location = new Point(57, 247);
             label8.Name = "label8";
             label8.Size = new Size(102, 26);
             label8.TabIndex = 31;
@@ -121,7 +127,7 @@
             label17.AutoSize = true;
             label17.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.Snow;
-            label17.Location = new Point(3, 242);
+            label17.Location = new Point(10, 321);
             label17.Name = "label17";
             label17.Size = new Size(152, 26);
             label17.TabIndex = 34;
@@ -132,7 +138,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.Snow;
-            label7.Location = new Point(52, 165);
+            label7.Location = new Point(63, 206);
             label7.Name = "label7";
             label7.Size = new Size(96, 26);
             label7.TabIndex = 33;
@@ -143,7 +149,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.Snow;
-            label9.Location = new Point(25, 125);
+            label9.Location = new Point(29, 166);
             label9.Name = "label9";
             label9.Size = new Size(130, 26);
             label9.TabIndex = 32;
@@ -156,7 +162,7 @@
             description_of_culture_textbox.Multiline = true;
             description_of_culture_textbox.Name = "description_of_culture_textbox";
             description_of_culture_textbox.ScrollBars = ScrollBars.Vertical;
-            description_of_culture_textbox.Size = new Size(300, 376);
+            description_of_culture_textbox.Size = new Size(300, 494);
             description_of_culture_textbox.TabIndex = 30;
             // 
             // type_of_culture_label
@@ -164,7 +170,7 @@
             type_of_culture_label.AutoSize = true;
             type_of_culture_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             type_of_culture_label.ForeColor = Color.Snow;
-            type_of_culture_label.Location = new Point(161, 85);
+            type_of_culture_label.Location = new Point(168, 85);
             type_of_culture_label.Name = "type_of_culture_label";
             type_of_culture_label.Size = new Size(16, 26);
             type_of_culture_label.TabIndex = 29;
@@ -175,7 +181,7 @@
             name_of_culture_label.AutoSize = true;
             name_of_culture_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             name_of_culture_label.ForeColor = Color.Snow;
-            name_of_culture_label.Location = new Point(161, 48);
+            name_of_culture_label.Location = new Point(168, 48);
             name_of_culture_label.Name = "name_of_culture_label";
             name_of_culture_label.Size = new Size(16, 26);
             name_of_culture_label.TabIndex = 28;
@@ -197,7 +203,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             label3.ForeColor = Color.Snow;
-            label3.Location = new Point(33, 85);
+            label3.Location = new Point(40, 85);
             label3.Name = "label3";
             label3.Size = new Size(115, 26);
             label3.TabIndex = 26;
@@ -208,7 +214,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             label2.ForeColor = Color.Snow;
-            label2.Location = new Point(18, 48);
+            label2.Location = new Point(25, 48);
             label2.Name = "label2";
             label2.Size = new Size(130, 26);
             label2.TabIndex = 25;
@@ -219,7 +225,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Sitka Banner", 16.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Snow;
-            label1.Location = new Point(232, 9);
+            label1.Location = new Point(242, 0);
             label1.Name = "label1";
             label1.Size = new Size(299, 39);
             label1.TabIndex = 24;
@@ -256,7 +262,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Snow;
-            label6.Location = new Point(3, 400);
+            label6.Location = new Point(7, 357);
             label6.Name = "label6";
             label6.Size = new Size(156, 26);
             label6.TabIndex = 43;
@@ -267,7 +273,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.Snow;
-            label10.Location = new Point(39, 323);
+            label10.Location = new Point(46, 437);
             label10.Name = "label10";
             label10.Size = new Size(116, 26);
             label10.TabIndex = 42;
@@ -278,7 +284,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.Snow;
-            label11.Location = new Point(25, 282);
+            label11.Location = new Point(33, 393);
             label11.Name = "label11";
             label11.Size = new Size(129, 26);
             label11.TabIndex = 41;
@@ -289,7 +295,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.Snow;
-            label12.Location = new Point(2, 364);
+            label12.Location = new Point(11, 479);
             label12.Name = "label12";
             label12.Size = new Size(152, 26);
             label12.TabIndex = 44;
@@ -300,51 +306,29 @@
             label5.AutoSize = true;
             label5.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Snow;
-            label5.Location = new Point(23, 437);
+            label5.Location = new Point(27, 555);
             label5.Name = "label5";
             label5.Size = new Size(136, 26);
             label5.TabIndex = 45;
             label5.Text = "Вміст крохмалю";
-            // 
-            // pollination_type_label
-            // 
-            pollination_type_label.AutoSize = true;
-            pollination_type_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
-            pollination_type_label.ForeColor = Color.Snow;
-            pollination_type_label.Location = new Point(161, 282);
-            pollination_type_label.Name = "pollination_type_label";
-            pollination_type_label.Size = new Size(16, 26);
-            pollination_type_label.TabIndex = 46;
-            pollination_type_label.Text = " ";
             // 
             // cuboid_label
             // 
             cuboid_label.AutoSize = true;
             cuboid_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             cuboid_label.ForeColor = Color.Snow;
-            cuboid_label.Location = new Point(161, 323);
+            cuboid_label.Location = new Point(169, 438);
             cuboid_label.Name = "cuboid_label";
             cuboid_label.Size = new Size(16, 26);
             cuboid_label.TabIndex = 47;
             cuboid_label.Text = " ";
-            // 
-            // indeterminate_label
-            // 
-            indeterminate_label.AutoSize = true;
-            indeterminate_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
-            indeterminate_label.ForeColor = Color.Snow;
-            indeterminate_label.Location = new Point(161, 364);
-            indeterminate_label.Name = "indeterminate_label";
-            indeterminate_label.Size = new Size(16, 26);
-            indeterminate_label.TabIndex = 48;
-            indeterminate_label.Text = " ";
             // 
             // starch_content_label
             // 
             starch_content_label.AutoSize = true;
             starch_content_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             starch_content_label.ForeColor = Color.Snow;
-            starch_content_label.Location = new Point(161, 437);
+            starch_content_label.Location = new Point(168, 555);
             starch_content_label.Name = "starch_content_label";
             starch_content_label.Size = new Size(16, 26);
             starch_content_label.TabIndex = 50;
@@ -355,7 +339,7 @@
             potential_of_harvest_label.AutoSize = true;
             potential_of_harvest_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             potential_of_harvest_label.ForeColor = Color.Snow;
-            potential_of_harvest_label.Location = new Point(161, 400);
+            potential_of_harvest_label.Location = new Point(168, 357);
             potential_of_harvest_label.Name = "potential_of_harvest_label";
             potential_of_harvest_label.Size = new Size(16, 26);
             potential_of_harvest_label.TabIndex = 51;
@@ -364,12 +348,18 @@
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top;
+            panel1.Controls.Add(indeterminate_label);
+            panel1.Controls.Add(pollination_type_label);
+            panel1.Controls.Add(shape_of_head_label);
+            panel1.Controls.Add(label16);
+            panel1.Controls.Add(frost_resistance_label);
+            panel1.Controls.Add(label15);
+            panel1.Controls.Add(author_label);
+            panel1.Controls.Add(label14);
             panel1.Controls.Add(potential_of_harvest_label);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(starch_content_label);
-            panel1.Controls.Add(indeterminate_label);
             panel1.Controls.Add(cuboid_label);
-            panel1.Controls.Add(pollination_type_label);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label12);
             panel1.Controls.Add(label6);
@@ -391,19 +381,107 @@
             panel1.Controls.Add(label2);
             panel1.Location = new Point(2, 31);
             panel1.Name = "panel1";
-            panel1.Size = new Size(752, 478);
+            panel1.Size = new Size(752, 587);
             panel1.TabIndex = 52;
+            // 
+            // pollination_type_label
+            // 
+            pollination_type_label.AutoSize = true;
+            pollination_type_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
+            pollination_type_label.ForeColor = Color.Snow;
+            pollination_type_label.Location = new Point(168, 393);
+            pollination_type_label.Name = "pollination_type_label";
+            pollination_type_label.Size = new Size(16, 26);
+            pollination_type_label.TabIndex = 58;
+            pollination_type_label.Text = " ";
+            // 
+            // shape_of_head_label
+            // 
+            shape_of_head_label.AutoSize = true;
+            shape_of_head_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
+            shape_of_head_label.ForeColor = Color.Snow;
+            shape_of_head_label.Location = new Point(168, 515);
+            shape_of_head_label.Name = "shape_of_head_label";
+            shape_of_head_label.Size = new Size(16, 26);
+            shape_of_head_label.TabIndex = 57;
+            shape_of_head_label.Text = " ";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.ForeColor = Color.Snow;
+            label16.Location = new Point(44, 515);
+            label16.Name = "label16";
+            label16.Size = new Size(119, 26);
+            label16.TabIndex = 56;
+            label16.Text = "Форма качана";
+            // 
+            // frost_resistance_label
+            // 
+            frost_resistance_label.AutoSize = true;
+            frost_resistance_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
+            frost_resistance_label.ForeColor = Color.Snow;
+            frost_resistance_label.Location = new Point(168, 283);
+            frost_resistance_label.Name = "frost_resistance_label";
+            frost_resistance_label.Size = new Size(16, 26);
+            frost_resistance_label.TabIndex = 55;
+            frost_resistance_label.Text = " ";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.ForeColor = Color.Snow;
+            label15.Location = new Point(22, 283);
+            label15.Name = "label15";
+            label15.Size = new Size(137, 26);
+            label15.TabIndex = 54;
+            label15.Text = "Морозостійкість";
+            // 
+            // author_label
+            // 
+            author_label.AutoSize = true;
+            author_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
+            author_label.ForeColor = Color.Snow;
+            author_label.Location = new Point(168, 124);
+            author_label.Name = "author_label";
+            author_label.Size = new Size(16, 26);
+            author_label.TabIndex = 53;
+            author_label.Text = " ";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.Snow;
+            label14.Location = new Point(26, 124);
+            label14.Name = "label14";
+            label14.Size = new Size(130, 26);
+            label14.TabIndex = 52;
+            label14.Text = "Автор культури";
+            // 
+            // indeterminate_label
+            // 
+            indeterminate_label.AutoSize = true;
+            indeterminate_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
+            indeterminate_label.ForeColor = Color.Snow;
+            indeterminate_label.Location = new Point(169, 479);
+            indeterminate_label.Name = "indeterminate_label";
+            indeterminate_label.Size = new Size(16, 26);
+            indeterminate_label.TabIndex = 59;
+            indeterminate_label.Text = " ";
             // 
             // InfoPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.ForestGreen;
-            ClientSize = new Size(761, 513);
+            ClientSize = new Size(761, 630);
             Controls.Add(panel1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            MinimumSize = new Size(779, 560);
+            MinimumSize = new Size(779, 677);
             Name = "InfoPage";
             Text = "Інформаційна сторінка";
             menuStrip1.ResumeLayout(false);
@@ -438,11 +516,17 @@
         private Label label11;
         private Label label12;
         private Label label5;
-        private Label pollination_type_label;
         private Label cuboid_label;
-        private Label indeterminate_label;
         private Label starch_content_label;
         private Label potential_of_harvest_label;
         private Panel panel1;
+        private Label frost_resistance_label;
+        private Label label15;
+        private Label author_label;
+        private Label label14;
+        private Label shape_of_head_label;
+        private Label label16;
+        private Label pollination_type_label;
+        private Label indeterminate_label;
     }
 }

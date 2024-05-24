@@ -32,14 +32,17 @@ namespace AgroDictionary.Forms
         {
             name_of_culture_label.Text = plant.Name;
             type_of_culture_label.Text = plant.Type;
+            author_label.Text = plant.Author;
             matur_time_label.Text = plant.Maturation_Time;
             fetal_weight_label.Text = plant.Weight;
             hybridity_of_culture_label.Text = plant.Hybridity;
+            frost_resistance_label.Text = plant.Frost_Resistance;
             exp_date_label.Text = plant.Expiration_Date;
+            potential_of_harvest_label.Text = plant.Potential_Harvest;
             pollination_type_label.Text = plant.Type_of_Pollution;
             cuboid_label.Text = plant.Is_Cuboid;
             indeterminate_label.Text = plant.Is_Indeterminate;
-            potential_of_harvest_label.Text = plant.Potential_Harvest;
+            shape_of_head_label.Text = plant.Shape_of_Head;
             starch_content_label.Text = plant.Starch_Content;
             description_of_culture_textbox.Text = plant.Description;
 
@@ -56,7 +59,7 @@ namespace AgroDictionary.Forms
         }
         private void EditForm_Saved(object sender, EventArgs e)
         {
-   
+
             this.Close();
         }
 

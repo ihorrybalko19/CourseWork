@@ -216,7 +216,7 @@
             panel2.Controls.Add(search_button);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(extraparameters_label);
-            panel2.Location = new Point(440, 67);
+            panel2.Location = new Point(449, 67);
             panel2.Name = "panel2";
             panel2.Size = new Size(384, 331);
             panel2.TabIndex = 25;
