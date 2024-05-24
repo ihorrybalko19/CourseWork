@@ -204,7 +204,7 @@
             result_field_listbox.Location = new Point(26, 521);
             result_field_listbox.Name = "result_field_listbox";
             result_field_listbox.Size = new Size(787, 120);
-            result_field_listbox.TabIndex = 14;
+            result_field_listbox.TabIndex = 17;
             // 
             // panel2
             // 
@@ -251,7 +251,7 @@
             shape_of_head_comboBox.Location = new Point(165, 7);
             shape_of_head_comboBox.Name = "shape_of_head_comboBox";
             shape_of_head_comboBox.Size = new Size(205, 32);
-            shape_of_head_comboBox.TabIndex = 15;
+            shape_of_head_comboBox.TabIndex = 13;
             // 
             // clear_button
             // 
@@ -259,7 +259,7 @@
             clear_button.Location = new Point(279, 294);
             clear_button.Name = "clear_button";
             clear_button.Size = new Size(94, 29);
-            clear_button.TabIndex = 13;
+            clear_button.TabIndex = 16;
             clear_button.Text = "Очистити";
             clear_button.UseVisualStyleBackColor = true;
             clear_button.Click += clear_button_Click;
@@ -283,7 +283,7 @@
             starch_content_comboBox.Location = new Point(165, 4);
             starch_content_comboBox.Name = "starch_content_comboBox";
             starch_content_comboBox.Size = new Size(205, 32);
-            starch_content_comboBox.TabIndex = 11;
+            starch_content_comboBox.TabIndex = 14;
             // 
             // label14
             // 
@@ -315,7 +315,7 @@
             indeterminate_comboBox.Location = new Point(165, 7);
             indeterminate_comboBox.Name = "indeterminate_comboBox";
             indeterminate_comboBox.Size = new Size(205, 32);
-            indeterminate_comboBox.TabIndex = 9;
+            indeterminate_comboBox.TabIndex = 12;
             // 
             // label11
             // 
@@ -347,7 +347,7 @@
             cuboid_comboBox.Location = new Point(165, 11);
             cuboid_comboBox.Name = "cuboid_comboBox";
             cuboid_comboBox.Size = new Size(205, 32);
-            cuboid_comboBox.TabIndex = 8;
+            cuboid_comboBox.TabIndex = 11;
             // 
             // label12
             // 
@@ -366,7 +366,7 @@
             search_button.Location = new Point(168, 294);
             search_button.Name = "search_button";
             search_button.Size = new Size(94, 29);
-            search_button.TabIndex = 12;
+            search_button.TabIndex = 15;
             search_button.Text = "Пошук";
             search_button.UseVisualStyleBackColor = true;
             search_button.Click += search_button_Click;
@@ -390,7 +390,7 @@
             type_of_pollution_comboBox.Location = new Point(165, 8);
             type_of_pollution_comboBox.Name = "type_of_pollution_comboBox";
             type_of_pollution_comboBox.Size = new Size(205, 32);
-            type_of_pollution_comboBox.TabIndex = 7;
+            type_of_pollution_comboBox.TabIndex = 10;
             // 
             // label9
             // 
@@ -417,14 +417,13 @@
             // potential_harvest_comboBox
             // 
             potential_harvest_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            potential_harvest_comboBox.Enabled = false;
             potential_harvest_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             potential_harvest_comboBox.FormattingEnabled = true;
             potential_harvest_comboBox.Items.AddRange(new object[] { "", "до 100 т на гектар", "від 100-300 т на гектар", "від 300-500 т на гектар", "понад 500 т" });
             potential_harvest_comboBox.Location = new Point(172, 367);
             potential_harvest_comboBox.Name = "potential_harvest_comboBox";
             potential_harvest_comboBox.Size = new Size(233, 32);
-            potential_harvest_comboBox.TabIndex = 10;
+            potential_harvest_comboBox.TabIndex = 9;
             // 
             // label10
             // 
@@ -472,18 +471,18 @@
             frost_resistance_comboBox.Location = new Point(172, 284);
             frost_resistance_comboBox.Name = "frost_resistance_comboBox";
             frost_resistance_comboBox.Size = new Size(233, 32);
-            frost_resistance_comboBox.TabIndex = 21;
+            frost_resistance_comboBox.TabIndex = 7;
             // 
             // author_comboBox
             // 
             author_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             author_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             author_comboBox.FormattingEnabled = true;
-            author_comboBox.Items.AddRange(new object[] { "", "Україна", "Франція", "Куріпка" });
+            author_comboBox.Items.AddRange(new object[] { "", "Україна", "Франція", "Куріпка", "коко" });
             author_comboBox.Location = new Point(172, 123);
             author_comboBox.Name = "author_comboBox";
             author_comboBox.Size = new Size(233, 32);
-            author_comboBox.TabIndex = 19;
+            author_comboBox.TabIndex = 3;
             // 
             // label2
             // 
@@ -506,7 +505,7 @@
             hybridity_of_culture_comboBox.Location = new Point(172, 243);
             hybridity_of_culture_comboBox.Name = "hybridity_of_culture_comboBox";
             hybridity_of_culture_comboBox.Size = new Size(233, 32);
-            hybridity_of_culture_comboBox.TabIndex = 5;
+            hybridity_of_culture_comboBox.TabIndex = 6;
             // 
             // label1
             // 
@@ -550,7 +549,7 @@
             exp_date_comboBox.Location = new Point(172, 326);
             exp_date_comboBox.Name = "exp_date_comboBox";
             exp_date_comboBox.Size = new Size(233, 32);
-            exp_date_comboBox.TabIndex = 6;
+            exp_date_comboBox.TabIndex = 8;
             // 
             // fetal_weight_comboBox
             // 
@@ -561,7 +560,7 @@
             fetal_weight_comboBox.Location = new Point(172, 203);
             fetal_weight_comboBox.Name = "fetal_weight_comboBox";
             fetal_weight_comboBox.Size = new Size(233, 32);
-            fetal_weight_comboBox.TabIndex = 4;
+            fetal_weight_comboBox.TabIndex = 5;
             // 
             // matur_time_comboBox
             // 
@@ -572,7 +571,7 @@
             matur_time_comboBox.Location = new Point(172, 163);
             matur_time_comboBox.Name = "matur_time_comboBox";
             matur_time_comboBox.Size = new Size(233, 32);
-            matur_time_comboBox.TabIndex = 3;
+            matur_time_comboBox.TabIndex = 4;
             // 
             // type_of_culture_comboBox
             // 
@@ -583,7 +582,7 @@
             type_of_culture_comboBox.Location = new Point(172, 81);
             type_of_culture_comboBox.Name = "type_of_culture_comboBox";
             type_of_culture_comboBox.Size = new Size(233, 32);
-            type_of_culture_comboBox.TabIndex = 1;
+            type_of_culture_comboBox.TabIndex = 2;
             // 
             // type_of_culture_label
             // 
@@ -615,7 +614,7 @@
             name_of_culture_textbox.MaxLength = 30;
             name_of_culture_textbox.Name = "name_of_culture_textbox";
             name_of_culture_textbox.Size = new Size(233, 29);
-            name_of_culture_textbox.TabIndex = 2;
+            name_of_culture_textbox.TabIndex = 1;
             // 
             // fetal_weight_label
             // 

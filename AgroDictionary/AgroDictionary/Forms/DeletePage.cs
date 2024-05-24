@@ -18,6 +18,7 @@ namespace AgroDictionary.Forms
         {
             InitializeComponent();
             name_of_culture_textbox.KeyPress += name_of_culture_textbox_KeyPress;
+            search_button.Click += search_button_Click;
             result_field_listbox.SelectedIndexChanged += result_field_listbox_SelectedIndexChanged;
             type_of_culture_comboBox.SelectedIndexChanged += type_of_culture_comboBox_SelectedIndexChanged;
             type_of_pollution_comboBox.SelectedIndexChanged += type_of_pollution_comboBox_SelectedIndexChanged;
@@ -39,13 +40,18 @@ namespace AgroDictionary.Forms
         }
         private void type_of_culture_comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (type_of_culture_comboBox.SelectedItem == null)
+            if (type_of_culture_comboBox.SelectedItem == null || string.IsNullOrEmpty(type_of_culture_comboBox.Text))
             {
                 type_of_pollution_comboBox.Enabled = false;
+                type_of_pollution_comboBox.SelectedIndex = -1;
                 cuboid_comboBox.Enabled = false;
+                cuboid_comboBox.SelectedIndex = -1;
                 indeterminate_comboBox.Enabled = false;
+                indeterminate_comboBox.SelectedIndex = -1;
                 shape_of_head_comboBox.Enabled = false;
+                shape_of_head_comboBox.SelectedIndex = -1;
                 starch_content_comboBox.Enabled = false;
+                starch_content_comboBox.SelectedIndex = -1;
                 return;
             }
 
@@ -60,8 +66,8 @@ namespace AgroDictionary.Forms
                     cuboid_comboBox.SelectedIndex = 0;
                     indeterminate_comboBox.Enabled = false;
                     indeterminate_comboBox.SelectedIndex = 0;
-                    potential_harvest_comboBox.Enabled = false;
-                    potential_harvest_comboBox.SelectedIndex = 0;
+                    shape_of_head_comboBox.Enabled = false;
+                    shape_of_head_comboBox.SelectedIndex = 0;
                     starch_content_comboBox.Enabled = false;
                     starch_content_comboBox.SelectedIndex = 0;
                     break;
@@ -72,8 +78,8 @@ namespace AgroDictionary.Forms
                     type_of_pollution_comboBox.SelectedIndex = 0;
                     indeterminate_comboBox.Enabled = false;
                     indeterminate_comboBox.SelectedIndex = 0;
-                    potential_harvest_comboBox.Enabled = false;
-                    potential_harvest_comboBox.SelectedIndex = 0;
+                    shape_of_head_comboBox.Enabled = false;
+                    shape_of_head_comboBox.SelectedIndex = 0;
                     starch_content_comboBox.Enabled = false;
                     starch_content_comboBox.SelectedIndex = 0;
                     break;
@@ -84,8 +90,8 @@ namespace AgroDictionary.Forms
                     type_of_pollution_comboBox.SelectedIndex = 0;
                     cuboid_comboBox.Enabled = false;
                     cuboid_comboBox.SelectedIndex = 0;
-                    potential_harvest_comboBox.Enabled = false;
-                    potential_harvest_comboBox.SelectedIndex = 0;
+                    shape_of_head_comboBox.Enabled = false;
+                    shape_of_head_comboBox.SelectedIndex = 0;
                     starch_content_comboBox.Enabled = false;
                     starch_content_comboBox.SelectedIndex = 0;
                     break;
@@ -110,8 +116,8 @@ namespace AgroDictionary.Forms
                     cuboid_comboBox.SelectedIndex = 0;
                     indeterminate_comboBox.Enabled = false;
                     indeterminate_comboBox.SelectedIndex = 0;
-                    potential_harvest_comboBox.Enabled = false;
-                    potential_harvest_comboBox.SelectedIndex = 0;
+                    shape_of_head_comboBox.Enabled = false;
+                    shape_of_head_comboBox.SelectedIndex = 0;
                     break;
             }
         }
@@ -186,20 +192,23 @@ namespace AgroDictionary.Forms
 
         private void search_button_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text) ||
-               string.IsNullOrWhiteSpace(type_of_culture_comboBox.Text) ||
-               string.IsNullOrWhiteSpace(author_comboBox.Text) ||
-               string.IsNullOrWhiteSpace(matur_time_comboBox.Text) ||
-               string.IsNullOrWhiteSpace(fetal_weight_comboBox.Text) ||
-               string.IsNullOrWhiteSpace(hybridity_of_culture_comboBox.Text) ||
-               string.IsNullOrWhiteSpace(frost_resistance_comboBox.Text) ||
-               string.IsNullOrWhiteSpace(exp_date_comboBox.Text) ||
-               string.IsNullOrWhiteSpace(potential_harvest_comboBox.Text))
+
+            if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text) &&
+        string.IsNullOrWhiteSpace(type_of_culture_comboBox.Text) &&
+        string.IsNullOrWhiteSpace(author_comboBox.Text) &&
+        string.IsNullOrWhiteSpace(matur_time_comboBox.Text) &&
+        string.IsNullOrWhiteSpace(fetal_weight_comboBox.Text) &&
+        string.IsNullOrWhiteSpace(hybridity_of_culture_comboBox.Text) &&
+        string.IsNullOrWhiteSpace(frost_resistance_comboBox.Text) &&
+        string.IsNullOrWhiteSpace(exp_date_comboBox.Text) &&
+        string.IsNullOrWhiteSpace(potential_harvest_comboBox.Text))
             {
-                MessageBox.Show("Увага!!! Ви не ввели жоден параметр. Будь ласка, введіть а" +
-                    "бо виберіть хоча б один із основних параметрів", "Помилка введення",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Увага!!! Ви не ввели жоден параметр. Будь ласка, введіть або виберіть хоча б один із основних параметрів",
+                    "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                result_field_listbox.Items.Clear();
+                return;
             }
+
             result_field_listbox.Items.Clear();
 
             string NamePlant = name_of_culture_textbox.Text;
@@ -230,25 +239,28 @@ namespace AgroDictionary.Forms
 
             string StarchContentPlant = string.Empty;
 
-            string selectedCultureType = type_of_culture_comboBox.SelectedItem.ToString();
+            string selectedCultureType = type_of_culture_comboBox.SelectedItem?.ToString();
 
-            switch (selectedCultureType)
+            if (!string.IsNullOrEmpty(selectedCultureType))
             {
-                case "огірок":
-                    TypePollutionPlant = type_of_pollution_comboBox.Text;
-                    break;
-                case "перець":
-                    CuboidPlant = cuboid_comboBox.Text;
-                    break;
-                case "помідор":
-                    IndeterminatePlant = indeterminate_comboBox.Text;
-                    break;
-                case "капуста":
-                    ShapeHeadPlant = shape_of_head_comboBox.Text;
-                    break;
-                case "картопля":
-                    StarchContentPlant = starch_content_comboBox.Text;
-                    break;
+                switch (selectedCultureType)
+                {
+                    case "огірок":
+                        TypePollutionPlant = type_of_pollution_comboBox.Text;
+                        break;
+                    case "перець":
+                        CuboidPlant = cuboid_comboBox.Text;
+                        break;
+                    case "помідор":
+                        IndeterminatePlant = indeterminate_comboBox.Text;
+                        break;
+                    case "капуста":
+                        ShapeHeadPlant = shape_of_head_comboBox.Text;
+                        break;
+                    case "картопля":
+                        StarchContentPlant = starch_content_comboBox.Text;
+                        break;
+                }
             }
 
 
@@ -280,8 +292,8 @@ namespace AgroDictionary.Forms
                 result_field_listbox.Items.Clear();
             }
         }
-  
-        
+
+
         private void result_field_listbox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (result_field_listbox.SelectedItem != null)
@@ -351,7 +363,7 @@ namespace AgroDictionary.Forms
 
             indeterminate_comboBox.SelectedIndex = -1;
 
-            shape_of_head_comboBox.SelectedItem = -1;
+            shape_of_head_comboBox.SelectedIndex = -1;
 
             starch_content_comboBox.SelectedIndex = -1;
 
