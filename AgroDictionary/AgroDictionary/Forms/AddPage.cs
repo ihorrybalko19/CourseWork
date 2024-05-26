@@ -157,7 +157,8 @@ namespace AgroDictionary.Forms
         }
         private void type_of_culture_comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (type_of_culture_comboBox.SelectedItem == null || string.IsNullOrEmpty(type_of_culture_comboBox.Text))
+            if (type_of_culture_comboBox.SelectedItem == null 
+                || string.IsNullOrEmpty(type_of_culture_comboBox.Text))
             {
                 type_of_pollution_comboBox.Enabled = false;
                 type_of_pollution_comboBox.SelectedIndex = -1;
@@ -333,7 +334,8 @@ namespace AgroDictionary.Forms
                     "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            DialogResult result = MessageBox.Show("Ви впевнені, що хочете додати рослину?", "Підтвердження додавання", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Ви впевнені, що хочете додати рослину?", 
+                "Підтвердження додавання", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
@@ -388,7 +390,6 @@ namespace AgroDictionary.Forms
 
                     MessageBox.Show("Вітаю. Нову рослину успішно додано!");
 
-                    this.Close();
                 }
                 catch (Exception ex)
                 {
@@ -397,5 +398,38 @@ namespace AgroDictionary.Forms
             }
         }
 
+        private void clear_button_Click(object sender, EventArgs e)
+        {
+            
+                name_of_culture_textbox.Text = "";
+
+                type_of_culture_comboBox.SelectedIndex = -1;
+
+                author_comboBox.SelectedIndex = -1;
+
+                matur_time_comboBox.SelectedIndex = -1;
+
+                fetal_weight_comboBox.SelectedIndex = -1;
+
+                hybridity_of_culture_comboBox.SelectedIndex = -1;
+
+                frost_resistance_comboBox.SelectedIndex = -1;
+
+                exp_date_comboBox.SelectedIndex = -1;
+
+                potential_harvest_comboBox.SelectedIndex = -1;
+
+                type_of_pollution_comboBox.SelectedIndex = -1;
+
+                cuboid_comboBox.SelectedIndex = -1;
+
+                indeterminate_comboBox.SelectedIndex = -1;
+
+                shape_of_head_comboBox.SelectedIndex = -1;
+
+                starch_content_comboBox.SelectedIndex = -1;
+
+                description_field_textBox.Text = "";
+        }
     }
 }

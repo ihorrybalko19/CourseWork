@@ -145,7 +145,7 @@ namespace AgroDictionary.Forms
                     type_of_pollution_comboBox.SelectedItem.ToString() == "категорія відсутня")
                 {
                     MessageBox.Show("Неможливо вибрати 'категорія відсутня' для огірка. " +
-                        "Тому автоматично вибрана перша категорія!!!",
+                        "\nТому автоматично вибрана перша категорія!!!",
                     "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     type_of_pollution_comboBox.SelectedIndex = 1;
                 }
@@ -160,7 +160,7 @@ namespace AgroDictionary.Forms
                     cuboid_comboBox.SelectedItem.ToString() == "категорія відсутня")
                 {
                     MessageBox.Show("Неможливо вибрати 'категорія відсутня' для перцю. " +
-                        "Тому автоматично вибрана перша категорія!!!",
+                        "\nТому автоматично вибрана перша категорія!!!",
                     "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     cuboid_comboBox.SelectedIndex = 1;
                 }
@@ -174,7 +174,7 @@ namespace AgroDictionary.Forms
                     indeterminate_comboBox.SelectedItem.ToString() == "категорія відсутня")
                 {
                     MessageBox.Show("Неможливо вибрати 'категорія відсутня' для помідора. " +
-                        "Тому автоматично вибрана перша категорія!!!",
+                        "\nТому автоматично вибрана перша категорія!!!",
                     "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     indeterminate_comboBox.SelectedIndex = 1;
                 }
@@ -188,7 +188,7 @@ namespace AgroDictionary.Forms
                     shape_of_head_comboBox.SelectedItem.ToString() == "категорія відсутня")
                 {
                     MessageBox.Show("Неможливо вибрати 'категорія відсутня' для капусти." +
-                        " Тому автоматично вибрана перша категорія!!!"
+                        "\nТому автоматично вибрана перша категорія!!!"
                         , "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     shape_of_head_comboBox.SelectedIndex = 1;
                 }
@@ -202,7 +202,7 @@ namespace AgroDictionary.Forms
                     starch_content_comboBox.SelectedItem.ToString() == "категорія відсутня")
                 {
                     MessageBox.Show("Неможливо вибрати 'категорія відсутня' для картоплі. " +
-                        "Тому автоматично вибрана перша категорія!!!"
+                        "\nТому автоматично вибрана перша категорія!!!"
                         , "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     starch_content_comboBox.SelectedIndex = 1;
                 }
@@ -249,7 +249,8 @@ namespace AgroDictionary.Forms
                 MessageBox.Show("Будь ласка, введіть обов'язкові поля: назву та опис!!! ");
                 return;
             }
-            DialogResult result = MessageBox.Show("Ви впевнені, що хочете зберегти зміни?", "Підтвердження збереження", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Ви впевнені, що хочете зберегти зміни?", 
+                "Підтвердження збереження", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {

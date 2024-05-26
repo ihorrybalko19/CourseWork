@@ -40,6 +40,7 @@
             error_hybridity_label = new Label();
             label2 = new Label();
             MainPage_panel = new Panel();
+            clear_button = new Button();
             error_description_label = new Label();
             error_potential_harvest_label = new Label();
             error_exp_date_label = new Label();
@@ -220,6 +221,7 @@
             // MainPage_panel
             // 
             MainPage_panel.Anchor = AnchorStyles.Top;
+            MainPage_panel.Controls.Add(clear_button);
             MainPage_panel.Controls.Add(error_description_label);
             MainPage_panel.Controls.Add(error_potential_harvest_label);
             MainPage_panel.Controls.Add(error_exp_date_label);
@@ -241,6 +243,17 @@
             MainPage_panel.Name = "MainPage_panel";
             MainPage_panel.Size = new Size(839, 644);
             MainPage_panel.TabIndex = 45;
+            // 
+            // clear_button
+            // 
+            clear_button.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clear_button.Location = new Point(515, 605);
+            clear_button.Name = "clear_button";
+            clear_button.Size = new Size(94, 29);
+            clear_button.TabIndex = 49;
+            clear_button.Text = "Очистити";
+            clear_button.UseVisualStyleBackColor = true;
+            clear_button.Click += clear_button_Click;
             // 
             // error_description_label
             // 
@@ -793,5 +806,6 @@
         private Label error_potential_harvest_label;
         private Label error_exp_date_label;
         private Label error_description_label;
+        private Button clear_button;
     }
 }

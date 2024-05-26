@@ -32,8 +32,8 @@
     "Is_Cuboid": "категорія відсутня",
     "Is_Indeterminate": "категорія відсутня",
     "Shape_of_Head": "категорія відсутня",
-    "Starch_Content": "понад 70 %",
-    "Description": "111111111111111111111111111111111111111111111111111уррру"
+    "Starch_Content": "від 30 до 50%",
+    "Description": "111111111111111111111111111111111111111111111111111уррруутутутететктцкткт"
   },
   {
     "Id": "5",
@@ -88,5 +88,59 @@
     "Shape_of_Head": "категорія відсутня",
     "Starch_Content": "категорія відсутня",
     "Description": "ffffff"
+  },
+  {
+    "Id": "e0f132ff-c3ab-452f-91a2-11ef2c3e4866",
+    "Name": "р",
+    "Type": "огірок",
+    "Author": "Франція",
+    "Maturation_Time": "ранньостиглі",
+    "Weight": "100 гр",
+    "Hybridity": "наявна",
+    "Frost_Resistance": "наявна",
+    "Expiration_Date": "від 3-3,5 місяців",
+    "Potential_Harvest": "до 100 т на гектар",
+    "Type_of_Pollution": "бджолозапильний",
+    "Is_Cuboid": "категорія відсутня",
+    "Is_Indeterminate": "категорія відсутня",
+    "Shape_of_Head": "категорія відсутня",
+    "Starch_Content": "категорія відсутня",
+    "Description": "р"
+  },
+  {
+    "Id": "f92b7adc-935e-4fb5-bcd9-cd03dcc1bfb2",
+    "Name": "цук",
+    "Type": "огірок",
+    "Author": "коко",
+    "Maturation_Time": "ранньостиглі",
+    "Weight": "100 гр",
+    "Hybridity": "наявна",
+    "Frost_Resistance": "наявна",
+    "Expiration_Date": "від 3-3,5 місяців",
+    "Potential_Harvest": "від 300-500 т на гектар",
+    "Type_of_Pollution": "бджолозапильний",
+    "Is_Cuboid": "категорія відсутня",
+    "Is_Indeterminate": "категорія відсутня",
+    "Shape_of_Head": "категорія відсутня",
+    "Starch_Content": "категорія відсутня",
+    "Description": "ч"
+  },
+  {
+    "Id": "17b8a0e8-020b-4704-913f-bee68dc371cc",
+    "Name": "йцу",
+    "Type": "огірок",
+    "Author": "Україна",
+    "Maturation_Time": "ранньостиглі",
+    "Weight": "100 гр",
+    "Hybridity": "наявна",
+    "Frost_Resistance": "наявна",
+    "Expiration_Date": "від 3-3,5 місяців",
+    "Potential_Harvest": "до 100 т на гектар",
+    "Type_of_Pollution": "бджолозапильний",
+    "Is_Cuboid": "категорія відсутня",
+    "Is_Indeterminate": "категорія відсутня",
+    "Shape_of_Head": "категорія відсутня",
+    "Starch_Content": "категорія відсутня",
+    "Description": "йцйуйуццуц"
   }
 ]

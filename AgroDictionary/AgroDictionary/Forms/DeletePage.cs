@@ -203,7 +203,8 @@ namespace AgroDictionary.Forms
         string.IsNullOrWhiteSpace(exp_date_comboBox.Text) &&
         string.IsNullOrWhiteSpace(potential_harvest_comboBox.Text))
             {
-                MessageBox.Show("Увага!!! Ви не ввели жоден параметр. Будь ласка, введіть або виберіть хоча б один із основних параметрів",
+                MessageBox.Show("Увага!!! Ви не ввели жоден параметр. " +
+                    "\nБудь ласка, введіть або виберіть хоча б один із основних параметрів",
                     "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 result_field_listbox.Items.Clear();
                 return;
@@ -283,7 +284,7 @@ namespace AgroDictionary.Forms
             }
             else
             {
-                MessageBox.Show("На жаль, результатів не знайдено. Примітка:" +
+                MessageBox.Show("На жаль, результатів не знайдено. \nПримітка:" +
                     " якщо ви шукали культуру за ім'ям та іншим параметром," +
                     " то перевірте, чи немає у полі 'Ім'я культури' випадкових" +
                     " пробілів. Якщо є, то приберіть їх будь ласка, щоб полегшити" +

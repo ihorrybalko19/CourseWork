@@ -28,7 +28,7 @@ namespace AgroDictionary.Forms
             starch_content_comboBox.SelectedIndexChanged += starch_content_comboBox_SelectedIndexChanged;
 
         }
-      
+
         private void name_of_culture_textbox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsDigit(e.KeyChar))
@@ -127,7 +127,7 @@ namespace AgroDictionary.Forms
             if (type_of_pollution_comboBox.Enabled == true)
             {
 
-                if (type_of_pollution_comboBox.SelectedItem != null && 
+                if (type_of_pollution_comboBox.SelectedItem != null &&
                     type_of_pollution_comboBox.SelectedItem.ToString() == "категорія відсутня")
                 {
                     MessageBox.Show("Неможливо вибрати 'категорія відсутня' для огірка.",
@@ -135,13 +135,13 @@ namespace AgroDictionary.Forms
                     type_of_pollution_comboBox.SelectedIndex = -1;
                 }
             }
-            
+
         }
         private void cuboid_comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cuboid_comboBox.Enabled == true)
             {
-                if (cuboid_comboBox.SelectedItem != null && 
+                if (cuboid_comboBox.SelectedItem != null &&
                     cuboid_comboBox.SelectedItem.ToString() == "категорія відсутня")
                 {
                     MessageBox.Show("Неможливо вибрати 'категорія відсутня' для перцю.",
@@ -154,7 +154,7 @@ namespace AgroDictionary.Forms
         {
             if (indeterminate_comboBox.Enabled == true)
             {
-                if (indeterminate_comboBox.SelectedItem != null && 
+                if (indeterminate_comboBox.SelectedItem != null &&
                     indeterminate_comboBox.SelectedItem.ToString() == "категорія відсутня")
                 {
                     MessageBox.Show("Неможливо вибрати 'категорія відсутня' для помідора.",
@@ -167,7 +167,7 @@ namespace AgroDictionary.Forms
         {
             if (shape_of_head_comboBox.Enabled == true)
             {
-                if (shape_of_head_comboBox.SelectedItem != null && 
+                if (shape_of_head_comboBox.SelectedItem != null &&
                     shape_of_head_comboBox.SelectedItem.ToString() == "категорія відсутня")
                 {
                     MessageBox.Show("Неможливо вибрати 'категорія відсутня' для капусти."
@@ -180,7 +180,7 @@ namespace AgroDictionary.Forms
         {
             if (starch_content_comboBox.Enabled == true)
             {
-                if (starch_content_comboBox.SelectedItem != null && 
+                if (starch_content_comboBox.SelectedItem != null &&
                     starch_content_comboBox.SelectedItem.ToString() == "категорія відсутня")
                 {
                     MessageBox.Show("Неможливо вибрати 'категорія відсутня' для картоплі."
@@ -204,7 +204,8 @@ namespace AgroDictionary.Forms
         string.IsNullOrWhiteSpace(exp_date_comboBox.Text) &&
         string.IsNullOrWhiteSpace(potential_harvest_comboBox.Text))
             {
-                MessageBox.Show("Увага!!! Ви не ввели жоден параметр. Будь ласка, введіть або виберіть хоча б один із основних параметрів",
+                MessageBox.Show("Увага!!! Ви не ввели жоден параметр. " +
+                    "\nБудь ласка, введіть або виберіть хоча б один з основних параметрів",
                     "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 result_field_listbox.Items.Clear();
                 return;
@@ -284,7 +285,7 @@ namespace AgroDictionary.Forms
             }
             else
             {
-                MessageBox.Show("На жаль, результатів не знайдено. Примітка:" +
+                MessageBox.Show("На жаль, результатів не знайдено. \nПримітка:" +
                     " якщо ви шукали культуру за ім'ям та іншим параметром," +
                     " то перевірте, чи немає у полі 'Ім'я культури' випадкових" +
                     " пробілів. Якщо є, то приберіть їх будь ласка, щоб полегшити" +
@@ -326,7 +327,7 @@ namespace AgroDictionary.Forms
             frost_resistance_comboBox.SelectedIndex = -1;
 
             exp_date_comboBox.SelectedIndex = -1;
-            
+
             potential_harvest_comboBox.SelectedIndex = -1;
 
             type_of_pollution_comboBox.SelectedIndex = -1;
@@ -336,7 +337,7 @@ namespace AgroDictionary.Forms
             indeterminate_comboBox.SelectedIndex = -1;
 
             shape_of_head_comboBox.SelectedIndex = -1;
-           
+
             starch_content_comboBox.SelectedIndex = -1;
 
             result_field_listbox.Items.Clear();
@@ -361,6 +362,16 @@ namespace AgroDictionary.Forms
         {
             DeletePage deletePage = new DeletePage();
             deletePage.ShowDialog();
+        }
+
+        private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void пропрограмуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Автор: ст. гр. ПЗПІ-23-4 Рибалко Ігор");
         }
     }
 }

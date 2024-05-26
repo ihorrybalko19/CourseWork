@@ -30,13 +30,9 @@
         {
             menuStrip_of_mainpage = new MenuStrip();
             файлToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator = new ToolStripSeparator();
-            toolStripSeparator1 = new ToolStripSeparator();
-            toolStripSeparator2 = new ToolStripSeparator();
-            выходToolStripMenuItem = new ToolStripMenuItem();
+            вихідToolStripMenuItem = new ToolStripMenuItem();
             справкаToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator5 = new ToolStripSeparator();
-            опрограммеToolStripMenuItem = new ToolStripMenuItem();
+            пропрограмуToolStripMenuItem = new ToolStripMenuItem();
             рослиниToolStripMenuItem = new ToolStripMenuItem();
             додатиРослинуToolStripMenuItem = new ToolStripMenuItem();
             видалитиРослинуToolStripMenuItem = new ToolStripMenuItem();
@@ -108,50 +104,32 @@
             // 
             // файлToolStripMenuItem
             // 
-            файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripSeparator, toolStripSeparator1, toolStripSeparator2, выходToolStripMenuItem });
+            файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { вихідToolStripMenuItem });
             файлToolStripMenuItem.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             файлToolStripMenuItem.Size = new Size(67, 24);
             файлToolStripMenuItem.Text = "&Файл";
             // 
-            // toolStripSeparator
+            // вихідToolStripMenuItem
             // 
-            toolStripSeparator.Name = "toolStripSeparator";
-            toolStripSeparator.Size = new Size(141, 6);
-            // 
-            // toolStripSeparator1
-            // 
-            toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(141, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(141, 6);
-            // 
-            // выходToolStripMenuItem
-            // 
-            выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            выходToolStripMenuItem.Size = new Size(144, 26);
-            выходToolStripMenuItem.Text = "Вы&ход";
+            вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
+            вихідToolStripMenuItem.Size = new Size(224, 26);
+            вихідToolStripMenuItem.Text = "Вихід";
+            вихідToolStripMenuItem.Click += вихідToolStripMenuItem_Click;
             // 
             // справкаToolStripMenuItem
             // 
-            справкаToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripSeparator5, опрограммеToolStripMenuItem });
+            справкаToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { пропрограмуToolStripMenuItem });
             справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
             справкаToolStripMenuItem.Size = new Size(94, 24);
             справкаToolStripMenuItem.Text = "&Справка";
             // 
-            // toolStripSeparator5
+            // пропрограмуToolStripMenuItem
             // 
-            toolStripSeparator5.Name = "toolStripSeparator5";
-            toolStripSeparator5.Size = new Size(215, 6);
-            // 
-            // опрограммеToolStripMenuItem
-            // 
-            опрограммеToolStripMenuItem.Name = "опрограммеToolStripMenuItem";
-            опрограммеToolStripMenuItem.Size = new Size(218, 26);
-            опрограммеToolStripMenuItem.Text = "&О программе…";
+            пропрограмуToolStripMenuItem.Name = "пропрограмуToolStripMenuItem";
+            пропрограмуToolStripMenuItem.Size = new Size(227, 26);
+            пропрограмуToolStripMenuItem.Text = "Про програму…";
+            пропрограмуToolStripMenuItem.Click += пропрограмуToolStripMenuItem_Click;
             // 
             // рослиниToolStripMenuItem
             // 
@@ -701,13 +679,9 @@
 
         private MenuStrip menuStrip_of_mainpage;
         private ToolStripMenuItem файлToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator;
-        private ToolStripSeparator toolStripSeparator1;
-        private ToolStripSeparator toolStripSeparator2;
-        private ToolStripMenuItem выходToolStripMenuItem;
+        private ToolStripMenuItem вихідToolStripMenuItem;
         private ToolStripMenuItem справкаToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator5;
-        private ToolStripMenuItem опрограммеToolStripMenuItem;
+        private ToolStripMenuItem пропрограмуToolStripMenuItem;
         private ToolStripMenuItem рослиниToolStripMenuItem;
         private ToolStripMenuItem додатиРослинуToolStripMenuItem;
         private ToolStripMenuItem видалитиРослинуToolStripMenuItem;
