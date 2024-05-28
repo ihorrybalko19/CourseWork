@@ -28,7 +28,7 @@ namespace AgroDictionary.Forms
             starch_content_comboBox.SelectedIndexChanged += starch_content_comboBox_SelectedIndexChanged;
 
         }
-        private void name_of_culture_textbox_KeyPress(object sender, KeyPressEventArgs e)
+        private void name_of_culture_textbox_KeyPress(object? sender, KeyPressEventArgs e)
         {
             if (char.IsDigit(e.KeyChar))
             {
@@ -38,7 +38,7 @@ namespace AgroDictionary.Forms
                 "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        private void type_of_culture_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void type_of_culture_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (type_of_culture_comboBox.SelectedItem == null || string.IsNullOrEmpty(type_of_culture_comboBox.Text))
             {
@@ -121,7 +121,7 @@ namespace AgroDictionary.Forms
                     break;
             }
         }
-        private void type_of_pollution_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void type_of_pollution_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (type_of_pollution_comboBox.Enabled == true)
             {
@@ -136,7 +136,7 @@ namespace AgroDictionary.Forms
             }
 
         }
-        private void cuboid_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void cuboid_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (cuboid_comboBox.Enabled == true)
             {
@@ -149,7 +149,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void indeterminate_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void indeterminate_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (indeterminate_comboBox.Enabled == true)
             {
@@ -162,7 +162,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void shape_of_head_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void shape_of_head_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (shape_of_head_comboBox.Enabled == true)
             {
@@ -175,7 +175,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void starch_content_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void starch_content_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (starch_content_comboBox.Enabled == true)
             {
@@ -190,7 +190,7 @@ namespace AgroDictionary.Forms
         }
 
 
-        private void search_button_Click(object sender, EventArgs e)
+        private void search_button_Click(object? sender, EventArgs e)
         {
 
             if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text) &&
@@ -295,7 +295,7 @@ namespace AgroDictionary.Forms
         }
 
 
-        private void result_field_listbox_SelectedIndexChanged(object sender, EventArgs e)
+        private void result_field_listbox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (result_field_listbox.SelectedItem != null)
             {
@@ -317,7 +317,7 @@ namespace AgroDictionary.Forms
 
                     DeletePlant(selected_Plant, all_Plants);
 
-                    MessageBox.Show("Вітаю. Рослина була успішно видалена!!!","Результат",
+                    MessageBox.Show("Вітаю. Рослина була успішно видалена!!!", "Результат",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
@@ -337,8 +337,7 @@ namespace AgroDictionary.Forms
                 result_field_listbox.Items.Remove(result_field_listbox.SelectedItem);
             }
         }
-
-        private void clear_button_Click(object sender, EventArgs e)
+        private void clear_button_Click_1(object? sender, EventArgs e)
         {
             name_of_culture_textbox.Text = "";
 
@@ -369,6 +368,11 @@ namespace AgroDictionary.Forms
             starch_content_comboBox.SelectedIndex = -1;
 
             result_field_listbox.Items.Clear();
+        }
+
+        private void cancel_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

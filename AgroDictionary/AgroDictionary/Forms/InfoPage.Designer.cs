@@ -55,6 +55,7 @@
             starch_content_label = new Label();
             potential_of_harvest_label = new Label();
             panel1 = new Panel();
+            indeterminate_label = new Label();
             pollination_type_label = new Label();
             shape_of_head_label = new Label();
             label16 = new Label();
@@ -62,7 +63,6 @@
             label15 = new Label();
             author_label = new Label();
             label14 = new Label();
-            indeterminate_label = new Label();
             menuStrip1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -157,10 +157,10 @@
             // 
             // description_of_culture_textbox
             // 
-            description_of_culture_textbox.Enabled = false;
-            description_of_culture_textbox.Location = new Point(447, 87);
+            description_of_culture_textbox.Location = new Point(477, 85);
             description_of_culture_textbox.Multiline = true;
             description_of_culture_textbox.Name = "description_of_culture_textbox";
+            description_of_culture_textbox.ReadOnly = true;
             description_of_culture_textbox.ScrollBars = ScrollBars.Vertical;
             description_of_culture_textbox.Size = new Size(300, 494);
             description_of_culture_textbox.TabIndex = 30;
@@ -192,7 +192,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
             label4.ForeColor = Color.Snow;
-            label4.Location = new Point(447, 48);
+            label4.Location = new Point(477, 48);
             label4.Name = "label4";
             label4.Size = new Size(50, 26);
             label4.TabIndex = 27;
@@ -239,7 +239,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { редагуватиРослинуToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(761, 28);
+            menuStrip1.Size = new Size(794, 28);
             menuStrip1.TabIndex = 39;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -381,8 +381,19 @@
             panel1.Controls.Add(label2);
             panel1.Location = new Point(2, 31);
             panel1.Name = "panel1";
-            panel1.Size = new Size(752, 587);
+            panel1.Size = new Size(780, 587);
             panel1.TabIndex = 52;
+            // 
+            // indeterminate_label
+            // 
+            indeterminate_label.AutoSize = true;
+            indeterminate_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
+            indeterminate_label.ForeColor = Color.Snow;
+            indeterminate_label.Location = new Point(169, 479);
+            indeterminate_label.Name = "indeterminate_label";
+            indeterminate_label.Size = new Size(16, 26);
+            indeterminate_label.TabIndex = 59;
+            indeterminate_label.Text = " ";
             // 
             // pollination_type_label
             // 
@@ -461,27 +472,16 @@
             label14.TabIndex = 52;
             label14.Text = "Автор культури";
             // 
-            // indeterminate_label
-            // 
-            indeterminate_label.AutoSize = true;
-            indeterminate_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold);
-            indeterminate_label.ForeColor = Color.Snow;
-            indeterminate_label.Location = new Point(169, 479);
-            indeterminate_label.Name = "indeterminate_label";
-            indeterminate_label.Size = new Size(16, 26);
-            indeterminate_label.TabIndex = 59;
-            indeterminate_label.Text = " ";
-            // 
             // InfoPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.ForestGreen;
-            ClientSize = new Size(761, 630);
+            ClientSize = new Size(794, 630);
             Controls.Add(panel1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            MinimumSize = new Size(779, 677);
+            MinimumSize = new Size(812, 677);
             Name = "InfoPage";
             Text = "Інформаційна сторінка";
             menuStrip1.ResumeLayout(false);

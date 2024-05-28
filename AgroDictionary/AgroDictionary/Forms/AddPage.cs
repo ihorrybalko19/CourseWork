@@ -35,7 +35,7 @@ namespace AgroDictionary.Forms
             shape_of_head_comboBox.SelectedIndexChanged += shape_of_head_comboBox_SelectedIndexChanged;
             starch_content_comboBox.SelectedIndexChanged += starch_content_comboBox_SelectedIndexChanged;
         }
-        private void name_of_culture_textbox_KeyPress(object sender, KeyPressEventArgs e)
+        private void name_of_culture_textbox_KeyPress(object? sender, KeyPressEventArgs e)
         {
             if (char.IsDigit(e.KeyChar))
             {
@@ -47,118 +47,186 @@ namespace AgroDictionary.Forms
         }
         private void name_of_culture_textbox_Validating(object? sender, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text))
-            {
-                error_name_label.Visible = true;
-            }
-            else
+            if (!string.IsNullOrWhiteSpace(name_of_culture_textbox.Text))
             {
                 error_name_label.Visible = false;
             }
-        }
-        private void type_of_culture_comboBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (type_of_culture_comboBox.SelectedIndex == -1)
-            {
-                error_type_label.Visible = true;
-            }
             else
             {
-                error_type_label.Visible = false;
+                error_name_label.Visible = true;
             }
         }
-        private void author_comboBox_Validating(object sender, CancelEventArgs e)
+        private void type_of_culture_comboBox_Validating(object? sender, CancelEventArgs e)
         {
-            if (author_comboBox.SelectedIndex == -1)
+            if (type_of_culture_comboBox.SelectedIndex != -1)
             {
-                error_author_label.Visible = true;
+               error_type_label.Visible = false;
             }
-            else
+        }
+        private void author_comboBox_Validating(object? sender, CancelEventArgs e)
+        {
+            if (author_comboBox.SelectedIndex != -1)
             {
                 error_author_label.Visible = false;
             }
-        }
-        private void matur_time_comboBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (matur_time_comboBox.SelectedIndex == -1)
+
+            if (type_of_culture_comboBox.SelectedIndex == 0 && !(author_comboBox.SelectedIndex == 0 
+                || author_comboBox.SelectedIndex == 1 || author_comboBox.SelectedIndex == 2 
+                || author_comboBox.SelectedIndex == 3 || author_comboBox.SelectedIndex == 4))
             {
-                error_matur_time_label.Visible = true;
+                MessageBox.Show("Ви не можете вибрати цього автора для огірка!!! Змініть, свій вибір ");
+                author_comboBox.SelectedIndex = -1;
+                error_author_label.Visible = true;
             }
-            else
+
+            if (type_of_culture_comboBox.SelectedIndex == 1 && !(author_comboBox.SelectedIndex == 5 
+                || author_comboBox.SelectedIndex == 6 || author_comboBox.SelectedIndex == 7 
+                || author_comboBox.SelectedIndex == 8 || author_comboBox.SelectedIndex == 9))
+            {
+                MessageBox.Show("Ви не можете вибрати цього автора для перцю!!! Змініть, свій вибір ");
+                author_comboBox.SelectedIndex = -1;
+                error_author_label.Visible = true;
+            }
+
+            if (type_of_culture_comboBox.SelectedIndex == 2 && !(author_comboBox.SelectedIndex == 0 
+                || author_comboBox.SelectedIndex == 1 || author_comboBox.SelectedIndex == 2 
+                || author_comboBox.SelectedIndex == 3 || author_comboBox.SelectedIndex == 10))
+            {
+                MessageBox.Show("Ви не можете вибрати цього автора для помідора!!! Змініть, свій вибір");
+                author_comboBox.SelectedIndex = -1;
+                error_author_label.Visible = true;
+            }
+
+            if (type_of_culture_comboBox.SelectedIndex == 3 && !(author_comboBox.SelectedIndex == 0 
+                || author_comboBox.SelectedIndex == 1 || author_comboBox.SelectedIndex == 2 
+                || author_comboBox.SelectedIndex == 3 || author_comboBox.SelectedIndex == 6))
+            {
+                MessageBox.Show("Ви не можете вибрати цього автора для капусти!!! Змініть, свій вибір");
+                author_comboBox.SelectedIndex = -1;
+                error_author_label.Visible = true;
+            }
+
+            if (type_of_culture_comboBox.SelectedIndex == 4 && !(author_comboBox.SelectedIndex == 11 
+                || author_comboBox.SelectedIndex == 12 || author_comboBox.SelectedIndex == 13 
+                || author_comboBox.SelectedIndex == 14 || author_comboBox.SelectedIndex == 15))
+            {
+                MessageBox.Show("Ви не можете вибрати цього автора для картоплі!!! Змініть, свій вибір");
+                author_comboBox.SelectedIndex = -1;
+                error_author_label.Visible = true;
+            }
+        }
+        
+        private void matur_time_comboBox_Validating(object? sender, CancelEventArgs e)
+        {
+            if (matur_time_comboBox.SelectedIndex != -1)
             {
                 error_matur_time_label.Visible = false;
             }
         }
-        private void fetal_weight_comboBox_Validating(object sender, CancelEventArgs e)
+        private void fetal_weight_comboBox_Validating(object? sender, CancelEventArgs e)
         {
-            if (fetal_weight_comboBox.SelectedIndex == -1)
-            {
-                error_weight_label.Visible = true;
-            }
-            else
+            if (fetal_weight_comboBox.SelectedIndex != -1)
             {
                 error_weight_label.Visible = false;
             }
-        }
-        private void hybridity_of_culture_comboBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (hybridity_of_culture_comboBox.SelectedIndex == -1)
+            if ( type_of_culture_comboBox.SelectedIndex == 0 && (fetal_weight_comboBox.SelectedIndex == 4
+                || fetal_weight_comboBox.SelectedIndex == 5 || fetal_weight_comboBox.SelectedIndex == 6))
             {
-                error_hybridity_label.Visible = true;
+                MessageBox.Show("Ви не можете вибрати цю вагу для огірка!!! Змініть, свій вибір");
+                fetal_weight_comboBox.SelectedIndex = -1;
+                error_weight_label.Visible = true;
             }
-            else
+            if (type_of_culture_comboBox.SelectedIndex == 1 && (fetal_weight_comboBox.SelectedIndex == 0
+                || fetal_weight_comboBox.SelectedIndex == 5 || fetal_weight_comboBox.SelectedIndex == 6))
+            {
+                MessageBox.Show("Ви не можете вибрати цю вагу для перцю!!! Змініть, свій вибір");
+                fetal_weight_comboBox.SelectedIndex = -1;
+                error_weight_label.Visible = true;
+            }
+            if (type_of_culture_comboBox.SelectedIndex == 2 && (fetal_weight_comboBox.SelectedIndex == 5
+                || fetal_weight_comboBox.SelectedIndex == 6))
+            {
+                MessageBox.Show("Ви не можете вибрати цю вагу для помідора!!! Змініть, свій вибір");
+                fetal_weight_comboBox.SelectedIndex = -1;
+                error_weight_label.Visible = true;
+            }
+            if (type_of_culture_comboBox.SelectedIndex == 3 && !(fetal_weight_comboBox.SelectedIndex == 5
+                || fetal_weight_comboBox.SelectedIndex == 6))
+            {
+                MessageBox.Show("Ви не можете вибрати цю вагу для капусти!!! Змініть, свій вибір");
+                fetal_weight_comboBox.SelectedIndex = -1;
+                error_weight_label.Visible = true;
+            }
+            if (type_of_culture_comboBox.SelectedIndex == 4 && (fetal_weight_comboBox.SelectedIndex == 5
+                || fetal_weight_comboBox.SelectedIndex == 6))
+            {
+                MessageBox.Show("Ви не можете вибрати цю вагу для картоплі!!! Змініть, свій вибір");
+                fetal_weight_comboBox.SelectedIndex = -1;
+                error_weight_label.Visible = true;
+            }
+        }
+        private void hybridity_of_culture_comboBox_Validating(object? sender, CancelEventArgs e)
+        {
+            if (hybridity_of_culture_comboBox.SelectedIndex != -1)
             {
                 error_hybridity_label.Visible = false;
             }
         }
-        private void frost_resistance_comboBox_Validating(object sender, CancelEventArgs e)
+        private void frost_resistance_comboBox_Validating(object? sender, CancelEventArgs e)
         {
-            if (frost_resistance_comboBox.SelectedIndex == -1)
-            {
-                error_frost_resist_label.Visible = true;
-            }
-            else
+            if (frost_resistance_comboBox.SelectedIndex != -1)
             {
                 error_frost_resist_label.Visible = false;
             }
         }
-        private void exp_date_comboBox_Validating(object sender, CancelEventArgs e)
+        private void exp_date_comboBox_Validating(object? sender, CancelEventArgs e)
         {
-            if (exp_date_comboBox.SelectedIndex == -1)
-            {
-                error_exp_date_label.Visible = true;
-            }
-            else
+            if (exp_date_comboBox.SelectedIndex != -1)
             {
                 error_exp_date_label.Visible = false;
             }
-        }
-        private void potential_harvest_comboBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (potential_harvest_comboBox.SelectedIndex == -1)
-            {
-                error_potential_harvest_label.Visible = true;
+            if (type_of_culture_comboBox.SelectedIndex == 0 && !(exp_date_comboBox.SelectedIndex == 0
+                || exp_date_comboBox.SelectedIndex == 1)){
+                MessageBox.Show("Ви не можете вибрати цей термін зберігання для огірка!!!");
+                exp_date_comboBox.SelectedIndex = -1;
+                error_exp_date_label.Visible = true;
             }
-            else
+            if (type_of_culture_comboBox.SelectedIndex == 1 && !(exp_date_comboBox.SelectedIndex == 0
+                || exp_date_comboBox.SelectedIndex == 1))
+            {
+                MessageBox.Show("Ви не можете вибрати цей термін зберігання для перцю!!!");
+                exp_date_comboBox.SelectedIndex = -1;
+                error_exp_date_label.Visible = true;
+            }
+            if (type_of_culture_comboBox.SelectedIndex == 2 && !(exp_date_comboBox.SelectedIndex == 0
+                || exp_date_comboBox.SelectedIndex == 1))
+            {
+                MessageBox.Show("Ви не можете вибрати цей термін зберігання для помідора!!!");
+                exp_date_comboBox.SelectedIndex = -1;
+                error_exp_date_label.Visible = true;
+            }
+        }
+        private void potential_harvest_comboBox_Validating(object? sender, CancelEventArgs e)
+        {
+            if (potential_harvest_comboBox.SelectedIndex != -1)
             {
                 error_potential_harvest_label.Visible = false;
             }
         }
-        private void description_field_textBox_Validating(object sender, CancelEventArgs e)
+        private void description_field_textBox_Validating(object? sender, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(description_field_textBox.Text))
-            {
-                error_description_label.Visible = true;
-            }
-            else
+            if (!string.IsNullOrWhiteSpace(description_field_textBox.Text))
             {
                 error_description_label.Visible = false;
             }
+            else
+            {
+                error_description_label.Visible = true;
+            }
         }
-        private void type_of_culture_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void type_of_culture_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
-            if (type_of_culture_comboBox.SelectedItem == null 
-                || string.IsNullOrEmpty(type_of_culture_comboBox.Text))
+            if (type_of_culture_comboBox.SelectedItem == null || string.IsNullOrEmpty(type_of_culture_comboBox.Text))
             {
                 type_of_pollution_comboBox.Enabled = false;
                 type_of_pollution_comboBox.SelectedIndex = -1;
@@ -172,6 +240,11 @@ namespace AgroDictionary.Forms
                 starch_content_comboBox.SelectedIndex = -1;
                 return;
             }
+
+            author_comboBox.Enabled = true;
+            fetal_weight_comboBox.Enabled = true;
+            exp_date_comboBox.Enabled = true;
+            potential_harvest_comboBox.Enabled = true;
 
             string selectedCultureType = type_of_culture_comboBox.SelectedItem.ToString().ToLower();
 
@@ -240,7 +313,7 @@ namespace AgroDictionary.Forms
             }
         }
 
-        private void type_of_pollution_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void type_of_pollution_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (type_of_pollution_comboBox.Enabled == true)
             {
@@ -256,7 +329,7 @@ namespace AgroDictionary.Forms
             }
 
         }
-        private void cuboid_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void cuboid_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (cuboid_comboBox.Enabled == true)
             {
@@ -270,7 +343,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void indeterminate_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void indeterminate_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (indeterminate_comboBox.Enabled == true)
             {
@@ -284,7 +357,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void shape_of_head_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void shape_of_head_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (shape_of_head_comboBox.Enabled == true)
             {
@@ -298,7 +371,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void starch_content_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void starch_content_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (starch_content_comboBox.Enabled == true)
             {
@@ -312,12 +385,12 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void cancel_button_Click(object sender, EventArgs e)
+        private void cancel_button_Click(object? sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void add_button_Click(object sender, EventArgs e)
+        private void add_button_Click(object? sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text)
                 || type_of_culture_comboBox.SelectedIndex == -1 ||
@@ -398,7 +471,7 @@ namespace AgroDictionary.Forms
             }
         }
 
-        private void clear_button_Click(object sender, EventArgs e)
+        private void clear_button_Click(object? sender, EventArgs e)
         {
             
                 name_of_culture_textbox.Text = "";
@@ -430,6 +503,26 @@ namespace AgroDictionary.Forms
                 starch_content_comboBox.SelectedIndex = -1;
 
                 description_field_textBox.Text = "";
+
+                error_name_label.Visible = true;
+
+                error_type_label.Visible = true;
+
+                error_author_label.Visible = true;
+
+                error_matur_time_label.Visible = true;
+
+                error_weight_label.Visible = true;
+
+                error_hybridity_label.Visible = true;
+
+                error_frost_resist_label.Visible = true;
+
+                error_exp_date_label.Visible = true;
+
+                error_potential_harvest_label.Visible= true;
+
+                error_description_label.Visible = true;
         }
     }
 }

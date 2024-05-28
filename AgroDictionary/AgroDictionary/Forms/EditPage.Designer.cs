@@ -167,9 +167,9 @@
             // panel3
             // 
             panel3.Anchor = AnchorStyles.Top;
+            panel3.Controls.Add(panel1);
             panel3.Controls.Add(panel2);
             panel3.Controls.Add(description_field_textBox);
-            panel3.Controls.Add(panel1);
             panel3.Controls.Add(titleError_label);
             panel3.Controls.Add(titleError_label1);
             panel3.Controls.Add(save_button);
@@ -220,7 +220,7 @@
             shape_of_head_comboBox.Enabled = false;
             shape_of_head_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             shape_of_head_comboBox.FormattingEnabled = true;
-            shape_of_head_comboBox.Items.AddRange(new object[] { "категорія відсутня", "наявна", "відсутня" });
+            shape_of_head_comboBox.Items.AddRange(new object[] { "категорія відсутня", "кругла", "овальна", "загострена", "циліндрична" });
             shape_of_head_comboBox.Location = new Point(165, 7);
             shape_of_head_comboBox.Name = "shape_of_head_comboBox";
             shape_of_head_comboBox.Size = new Size(205, 32);
@@ -386,10 +386,10 @@
             panel1.Controls.Add(fetal_weight_label);
             panel1.Controls.Add(matur_time_label);
             panel1.Controls.Add(name_of_culture_label);
-            panel1.Location = new Point(3, 61);
+            panel1.Location = new Point(0, 63);
             panel1.Name = "panel1";
-            panel1.Size = new Size(412, 413);
-            panel1.TabIndex = 31;
+            panel1.Size = new Size(418, 413);
+            panel1.TabIndex = 30;
             // 
             // frost_resistance_comboBox
             // 
@@ -399,7 +399,7 @@
             frost_resistance_comboBox.Items.AddRange(new object[] { "наявна", "відсутня" });
             frost_resistance_comboBox.Location = new Point(172, 284);
             frost_resistance_comboBox.Name = "frost_resistance_comboBox";
-            frost_resistance_comboBox.Size = new Size(233, 32);
+            frost_resistance_comboBox.Size = new Size(238, 32);
             frost_resistance_comboBox.TabIndex = 7;
             // 
             // author_comboBox
@@ -407,10 +407,10 @@
             author_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             author_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             author_comboBox.FormattingEnabled = true;
-            author_comboBox.Items.AddRange(new object[] { "Україна", "Франція", "Куріпка", "коко" });
+            author_comboBox.Items.AddRange(new object[] { "Монсанто (огірок, помідор, капуста)", "Сингента (огірок, помідор, капуста)", "Бейо Заден (огірок, помідор, капуста)", "Рійк Цваан (огірок, помідор, капуста)", "Нанхемс БАСФ (огірок)", "Семініс (перець)", "Енза Заден (перець, капуста)", "Хазера насіння (перець)", "Клауз (перець)", "Такіі насіння (перець)", "Саката насіння (помідор)", "ХЗПК (картопля)", "Агріко (картопля)", "Мейжер (картопля)", "Стет (картопля)", "Солана (картопля)" });
             author_comboBox.Location = new Point(172, 123);
             author_comboBox.Name = "author_comboBox";
-            author_comboBox.Size = new Size(233, 32);
+            author_comboBox.Size = new Size(238, 32);
             author_comboBox.TabIndex = 3;
             // 
             // label2
@@ -430,10 +430,10 @@
             potential_harvest_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             potential_harvest_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             potential_harvest_comboBox.FormattingEnabled = true;
-            potential_harvest_comboBox.Items.AddRange(new object[] { "до 100 т на гектар", "від 100-300 т на гектар", "від 300-500 т на гектар", "понад 500 т" });
+            potential_harvest_comboBox.Items.AddRange(new object[] { "30-50 т/га", "40-70 т/га", "60-100 т/га" });
             potential_harvest_comboBox.Location = new Point(172, 367);
             potential_harvest_comboBox.Name = "potential_harvest_comboBox";
-            potential_harvest_comboBox.Size = new Size(233, 32);
+            potential_harvest_comboBox.Size = new Size(238, 32);
             potential_harvest_comboBox.TabIndex = 9;
             // 
             // hybridity_of_culture_comboBox
@@ -444,7 +444,7 @@
             hybridity_of_culture_comboBox.Items.AddRange(new object[] { "наявна", "відсутня" });
             hybridity_of_culture_comboBox.Location = new Point(172, 243);
             hybridity_of_culture_comboBox.Name = "hybridity_of_culture_comboBox";
-            hybridity_of_culture_comboBox.Size = new Size(233, 32);
+            hybridity_of_culture_comboBox.Size = new Size(238, 32);
             hybridity_of_culture_comboBox.TabIndex = 6;
             // 
             // label3
@@ -496,10 +496,10 @@
             exp_date_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             exp_date_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             exp_date_comboBox.FormattingEnabled = true;
-            exp_date_comboBox.Items.AddRange(new object[] { "від 3-3,5 місяців", "до 4 місяців", "від 4-5 місяців", "понад 5 місяців" });
+            exp_date_comboBox.Items.AddRange(new object[] { "від 1 до 2 тижнів", "від 2 до 3 тижнів", "від 4 до 6 місяців", "від 6 до 8 місяців" });
             exp_date_comboBox.Location = new Point(172, 326);
             exp_date_comboBox.Name = "exp_date_comboBox";
-            exp_date_comboBox.Size = new Size(233, 32);
+            exp_date_comboBox.Size = new Size(238, 32);
             exp_date_comboBox.TabIndex = 8;
             // 
             // fetal_weight_comboBox
@@ -507,10 +507,10 @@
             fetal_weight_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             fetal_weight_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             fetal_weight_comboBox.FormattingEnabled = true;
-            fetal_weight_comboBox.Items.AddRange(new object[] { "100 гр", "200 гр", "300 гр", "понад 300 гр." });
+            fetal_weight_comboBox.Items.AddRange(new object[] { "100 гр", "150 гр", "175 гр", "200 гр", "250 гр", "понад 1,5 кг", "понад 2-3 кг" });
             fetal_weight_comboBox.Location = new Point(172, 203);
             fetal_weight_comboBox.Name = "fetal_weight_comboBox";
-            fetal_weight_comboBox.Size = new Size(233, 32);
+            fetal_weight_comboBox.Size = new Size(238, 32);
             fetal_weight_comboBox.TabIndex = 5;
             // 
             // matur_time_comboBox
@@ -521,7 +521,7 @@
             matur_time_comboBox.Items.AddRange(new object[] { "ранньостиглі", "середньостиглі", "пізньостиглі" });
             matur_time_comboBox.Location = new Point(172, 163);
             matur_time_comboBox.Name = "matur_time_comboBox";
-            matur_time_comboBox.Size = new Size(233, 32);
+            matur_time_comboBox.Size = new Size(238, 32);
             matur_time_comboBox.TabIndex = 4;
             // 
             // type_of_culture_comboBox
@@ -532,7 +532,7 @@
             type_of_culture_comboBox.Items.AddRange(new object[] { "огірок", "перець", "помідор", "капуста", "картопля" });
             type_of_culture_comboBox.Location = new Point(172, 81);
             type_of_culture_comboBox.Name = "type_of_culture_comboBox";
-            type_of_culture_comboBox.Size = new Size(233, 32);
+            type_of_culture_comboBox.Size = new Size(238, 32);
             type_of_culture_comboBox.TabIndex = 2;
             // 
             // type_of_culture_label
@@ -564,7 +564,7 @@
             name_of_culture_textbox.Location = new Point(172, 42);
             name_of_culture_textbox.MaxLength = 30;
             name_of_culture_textbox.Name = "name_of_culture_textbox";
-            name_of_culture_textbox.Size = new Size(233, 29);
+            name_of_culture_textbox.Size = new Size(238, 29);
             name_of_culture_textbox.TabIndex = 1;
             // 
             // fetal_weight_label
@@ -639,6 +639,23 @@
         private Label titleError_label;
         private Label titleError_label1;
         private Panel panel3;
+        private Panel panel2;
+        private Panel panel4;
+        private Label label4;
+        private ComboBox shape_of_head_comboBox;
+        private Panel panel9;
+        private ComboBox starch_content_comboBox;
+        private Label label14;
+        private Panel panel6;
+        private ComboBox indeterminate_comboBox;
+        private Label label11;
+        private Panel panel7;
+        private ComboBox cuboid_comboBox;
+        private Label label12;
+        private Panel panel5;
+        private ComboBox type_of_pollution_comboBox;
+        private Label label9;
+        private Label extraparameters_label;
         private Panel panel1;
         private ComboBox frost_resistance_comboBox;
         private ComboBox author_comboBox;
@@ -659,22 +676,5 @@
         private Label fetal_weight_label;
         private Label matur_time_label;
         private Label name_of_culture_label;
-        private Panel panel2;
-        private Panel panel4;
-        private Label label4;
-        private ComboBox shape_of_head_comboBox;
-        private Panel panel9;
-        private ComboBox starch_content_comboBox;
-        private Label label14;
-        private Panel panel6;
-        private ComboBox indeterminate_comboBox;
-        private Label label11;
-        private Panel panel7;
-        private ComboBox cuboid_comboBox;
-        private Label label12;
-        private Panel panel5;
-        private ComboBox type_of_pollution_comboBox;
-        private Label label9;
-        private Label extraparameters_label;
     }
 }

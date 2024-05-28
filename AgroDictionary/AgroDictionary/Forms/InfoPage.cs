@@ -48,7 +48,7 @@ namespace AgroDictionary.Forms
 
         }
 
-        private void редагуватиРослинуToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void редагуватиРослинуToolStripMenuItem1_Click(object? sender, EventArgs e)
         {
             EditPage edit_page = new EditPage(plant, "data_of_plants.json");
 
@@ -57,7 +57,7 @@ namespace AgroDictionary.Forms
             edit_page.ShowDialog();
 
         }
-        private void EditForm_Saved(object sender, EventArgs e)
+        private void EditForm_Saved(object? sender, EventArgs e)
         {
 
             this.Close();

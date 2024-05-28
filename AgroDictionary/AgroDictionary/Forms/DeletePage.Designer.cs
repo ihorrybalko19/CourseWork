@@ -29,27 +29,8 @@
         private void InitializeComponent()
         {
             DeletePage_panel = new Panel();
+            cancel_button = new Button();
             titlehandbookofbreeder = new Label();
-            panel1 = new Panel();
-            frost_resistance_comboBox = new ComboBox();
-            author_comboBox = new ComboBox();
-            label2 = new Label();
-            potential_harvest_comboBox = new ComboBox();
-            hybridity_of_culture_comboBox = new ComboBox();
-            label1 = new Label();
-            label10 = new Label();
-            hybridity_of_culture_label = new Label();
-            exp_date_label = new Label();
-            exp_date_comboBox = new ComboBox();
-            fetal_weight_comboBox = new ComboBox();
-            matur_time_comboBox = new ComboBox();
-            type_of_culture_comboBox = new ComboBox();
-            type_of_culture_label = new Label();
-            basicparameters_label = new Label();
-            name_of_culture_textbox = new TextBox();
-            fetal_weight_label = new Label();
-            matur_time_label = new Label();
-            name_of_culture_label = new Label();
             title_searching_result = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
@@ -71,21 +52,42 @@
             label9 = new Label();
             extraparameters_label = new Label();
             result_field_listbox = new ListBox();
+            panel1 = new Panel();
+            frost_resistance_comboBox = new ComboBox();
+            author_comboBox = new ComboBox();
+            label1 = new Label();
+            potential_harvest_comboBox = new ComboBox();
+            hybridity_of_culture_comboBox = new ComboBox();
+            label4 = new Label();
+            label10 = new Label();
+            hybridity_of_culture_label = new Label();
+            exp_date_label = new Label();
+            exp_date_comboBox = new ComboBox();
+            fetal_weight_comboBox = new ComboBox();
+            matur_time_comboBox = new ComboBox();
+            type_of_culture_comboBox = new ComboBox();
+            type_of_culture_label = new Label();
+            basicparameters_label = new Label();
+            name_of_culture_textbox = new TextBox();
+            fetal_weight_label = new Label();
+            matur_time_label = new Label();
+            name_of_culture_label = new Label();
             DeletePage_panel.SuspendLayout();
-            panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel9.SuspendLayout();
             panel6.SuspendLayout();
             panel7.SuspendLayout();
             panel4.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // DeletePage_panel
             // 
             DeletePage_panel.Anchor = AnchorStyles.Top;
-            DeletePage_panel.Controls.Add(titlehandbookofbreeder);
             DeletePage_panel.Controls.Add(panel1);
+            DeletePage_panel.Controls.Add(cancel_button);
+            DeletePage_panel.Controls.Add(titlehandbookofbreeder);
             DeletePage_panel.Controls.Add(title_searching_result);
             DeletePage_panel.Controls.Add(panel2);
             DeletePage_panel.Controls.Add(result_field_listbox);
@@ -93,6 +95,17 @@
             DeletePage_panel.Name = "DeletePage_panel";
             DeletePage_panel.Size = new Size(839, 660);
             DeletePage_panel.TabIndex = 30;
+            // 
+            // cancel_button
+            // 
+            cancel_button.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cancel_button.Location = new Point(707, 404);
+            cancel_button.Name = "cancel_button";
+            cancel_button.Size = new Size(106, 29);
+            cancel_button.TabIndex = 29;
+            cancel_button.Text = "Відмінити";
+            cancel_button.UseVisualStyleBackColor = true;
+            cancel_button.Click += cancel_button_Click;
             // 
             // titlehandbookofbreeder
             // 
@@ -104,242 +117,6 @@
             titlehandbookofbreeder.Size = new Size(279, 43);
             titlehandbookofbreeder.TabIndex = 28;
             titlehandbookofbreeder.Text = "Видалення рослини";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(frost_resistance_comboBox);
-            panel1.Controls.Add(author_comboBox);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(potential_harvest_comboBox);
-            panel1.Controls.Add(hybridity_of_culture_comboBox);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(label10);
-            panel1.Controls.Add(hybridity_of_culture_label);
-            panel1.Controls.Add(exp_date_label);
-            panel1.Controls.Add(exp_date_comboBox);
-            panel1.Controls.Add(fetal_weight_comboBox);
-            panel1.Controls.Add(matur_time_comboBox);
-            panel1.Controls.Add(type_of_culture_comboBox);
-            panel1.Controls.Add(type_of_culture_label);
-            panel1.Controls.Add(basicparameters_label);
-            panel1.Controls.Add(name_of_culture_textbox);
-            panel1.Controls.Add(fetal_weight_label);
-            panel1.Controls.Add(matur_time_label);
-            panel1.Controls.Add(name_of_culture_label);
-            panel1.Location = new Point(3, 67);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(412, 413);
-            panel1.TabIndex = 24;
-            // 
-            // frost_resistance_comboBox
-            // 
-            frost_resistance_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            frost_resistance_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            frost_resistance_comboBox.FormattingEnabled = true;
-            frost_resistance_comboBox.Items.AddRange(new object[] { "", "наявна", "відсутня" });
-            frost_resistance_comboBox.Location = new Point(172, 284);
-            frost_resistance_comboBox.Name = "frost_resistance_comboBox";
-            frost_resistance_comboBox.Size = new Size(233, 32);
-            frost_resistance_comboBox.TabIndex = 21;
-            // 
-            // author_comboBox
-            // 
-            author_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            author_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            author_comboBox.FormattingEnabled = true;
-            author_comboBox.Items.AddRange(new object[] { "", "огірок", "перець", "помідор", "капуста", "картопля" });
-            author_comboBox.Location = new Point(172, 123);
-            author_comboBox.Name = "author_comboBox";
-            author_comboBox.Size = new Size(233, 32);
-            author_comboBox.TabIndex = 19;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.Snow;
-            label2.Location = new Point(29, 124);
-            label2.Name = "label2";
-            label2.Size = new Size(130, 26);
-            label2.TabIndex = 20;
-            label2.Text = "Автор культури";
-            label2.TextAlign = ContentAlignment.MiddleRight;
-            // 
-            // potential_harvest_comboBox
-            // 
-            potential_harvest_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            potential_harvest_comboBox.Enabled = false;
-            potential_harvest_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            potential_harvest_comboBox.FormattingEnabled = true;
-            potential_harvest_comboBox.Items.AddRange(new object[] { "", "до 100 т на гектар", "від 100-300 т на гектар", "від 300-500 т на гектар", "понад 500 т" });
-            potential_harvest_comboBox.Location = new Point(172, 367);
-            potential_harvest_comboBox.Name = "potential_harvest_comboBox";
-            potential_harvest_comboBox.Size = new Size(233, 32);
-            potential_harvest_comboBox.TabIndex = 10;
-            // 
-            // hybridity_of_culture_comboBox
-            // 
-            hybridity_of_culture_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            hybridity_of_culture_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            hybridity_of_culture_comboBox.FormattingEnabled = true;
-            hybridity_of_culture_comboBox.Items.AddRange(new object[] { "", "наявна", "відсутня" });
-            hybridity_of_culture_comboBox.Location = new Point(172, 243);
-            hybridity_of_culture_comboBox.Name = "hybridity_of_culture_comboBox";
-            hybridity_of_culture_comboBox.Size = new Size(233, 32);
-            hybridity_of_culture_comboBox.TabIndex = 5;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Snow;
-            label1.Location = new Point(26, 290);
-            label1.Name = "label1";
-            label1.Size = new Size(137, 26);
-            label1.TabIndex = 18;
-            label1.Text = "Морозостійкість";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.Snow;
-            label10.Location = new Point(3, 367);
-            label10.Name = "label10";
-            label10.Size = new Size(156, 26);
-            label10.TabIndex = 11;
-            label10.Text = "Потенціал урожаю";
-            // 
-            // hybridity_of_culture_label
-            // 
-            hybridity_of_culture_label.AutoSize = true;
-            hybridity_of_culture_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            hybridity_of_culture_label.ForeColor = Color.Snow;
-            hybridity_of_culture_label.Location = new Point(61, 247);
-            hybridity_of_culture_label.Name = "hybridity_of_culture_label";
-            hybridity_of_culture_label.Size = new Size(102, 26);
-            hybridity_of_culture_label.TabIndex = 11;
-            hybridity_of_culture_label.Text = "Гібридність";
-            // 
-            // exp_date_label
-            // 
-            exp_date_label.AutoSize = true;
-            exp_date_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            exp_date_label.ForeColor = Color.Snow;
-            exp_date_label.Location = new Point(14, 327);
-            exp_date_label.Name = "exp_date_label";
-            exp_date_label.Size = new Size(152, 26);
-            exp_date_label.TabIndex = 15;
-            exp_date_label.Text = "Термін зберігання";
-            // 
-            // exp_date_comboBox
-            // 
-            exp_date_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            exp_date_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            exp_date_comboBox.FormattingEnabled = true;
-            exp_date_comboBox.Items.AddRange(new object[] { "", "від 3-3,5 місяців", "до 4 місяців", "від 4-5 місяців", "понад 5 місяців" });
-            exp_date_comboBox.Location = new Point(172, 326);
-            exp_date_comboBox.Name = "exp_date_comboBox";
-            exp_date_comboBox.Size = new Size(233, 32);
-            exp_date_comboBox.TabIndex = 6;
-            // 
-            // fetal_weight_comboBox
-            // 
-            fetal_weight_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            fetal_weight_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            fetal_weight_comboBox.FormattingEnabled = true;
-            fetal_weight_comboBox.Items.AddRange(new object[] { "", "100 гр", "200 гр", "300 гр", "понад 300 гр." });
-            fetal_weight_comboBox.Location = new Point(172, 203);
-            fetal_weight_comboBox.Name = "fetal_weight_comboBox";
-            fetal_weight_comboBox.Size = new Size(233, 32);
-            fetal_weight_comboBox.TabIndex = 4;
-            // 
-            // matur_time_comboBox
-            // 
-            matur_time_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            matur_time_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            matur_time_comboBox.FormattingEnabled = true;
-            matur_time_comboBox.Items.AddRange(new object[] { "", "ранньостиглі", "середньостиглі", "пізньостиглі" });
-            matur_time_comboBox.Location = new Point(172, 163);
-            matur_time_comboBox.Name = "matur_time_comboBox";
-            matur_time_comboBox.Size = new Size(233, 32);
-            matur_time_comboBox.TabIndex = 3;
-            // 
-            // type_of_culture_comboBox
-            // 
-            type_of_culture_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            type_of_culture_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            type_of_culture_comboBox.FormattingEnabled = true;
-            type_of_culture_comboBox.Items.AddRange(new object[] { "", "огірок", "перець", "помідор", "капуста", "картопля" });
-            type_of_culture_comboBox.Location = new Point(172, 81);
-            type_of_culture_comboBox.Name = "type_of_culture_comboBox";
-            type_of_culture_comboBox.Size = new Size(233, 32);
-            type_of_culture_comboBox.TabIndex = 1;
-            // 
-            // type_of_culture_label
-            // 
-            type_of_culture_label.AutoSize = true;
-            type_of_culture_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            type_of_culture_label.ForeColor = Color.Snow;
-            type_of_culture_label.Location = new Point(44, 82);
-            type_of_culture_label.Name = "type_of_culture_label";
-            type_of_culture_label.Size = new Size(115, 26);
-            type_of_culture_label.TabIndex = 16;
-            type_of_culture_label.Text = "Вид культури";
-            type_of_culture_label.TextAlign = ContentAlignment.MiddleRight;
-            // 
-            // basicparameters_label
-            // 
-            basicparameters_label.AutoSize = true;
-            basicparameters_label.Font = new Font("Sitka Banner", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            basicparameters_label.ForeColor = Color.Snow;
-            basicparameters_label.Location = new Point(132, 2);
-            basicparameters_label.Name = "basicparameters_label";
-            basicparameters_label.Size = new Size(178, 29);
-            basicparameters_label.TabIndex = 10;
-            basicparameters_label.Text = "Основні параметри";
-            // 
-            // name_of_culture_textbox
-            // 
-            name_of_culture_textbox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            name_of_culture_textbox.Location = new Point(172, 42);
-            name_of_culture_textbox.MaxLength = 30;
-            name_of_culture_textbox.Name = "name_of_culture_textbox";
-            name_of_culture_textbox.Size = new Size(233, 29);
-            name_of_culture_textbox.TabIndex = 2;
-            // 
-            // fetal_weight_label
-            // 
-            fetal_weight_label.AutoSize = true;
-            fetal_weight_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            fetal_weight_label.ForeColor = Color.Snow;
-            fetal_weight_label.Location = new Point(61, 204);
-            fetal_weight_label.Name = "fetal_weight_label";
-            fetal_weight_label.Size = new Size(96, 26);
-            fetal_weight_label.TabIndex = 4;
-            fetal_weight_label.Text = "Вага плоду";
-            // 
-            // matur_time_label
-            // 
-            matur_time_label.AutoSize = true;
-            matur_time_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            matur_time_label.ForeColor = Color.Snow;
-            matur_time_label.Location = new Point(29, 161);
-            matur_time_label.Name = "matur_time_label";
-            matur_time_label.Size = new Size(130, 26);
-            matur_time_label.TabIndex = 3;
-            matur_time_label.Text = "Час дозрівання";
-            // 
-            // name_of_culture_label
-            // 
-            name_of_culture_label.AutoSize = true;
-            name_of_culture_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            name_of_culture_label.ForeColor = Color.Snow;
-            name_of_culture_label.Location = new Point(29, 42);
-            name_of_culture_label.Name = "name_of_culture_label";
-            name_of_culture_label.Size = new Size(130, 26);
-            name_of_culture_label.TabIndex = 1;
-            name_of_culture_label.Text = "Назва культури";
             // 
             // title_searching_result
             // 
@@ -393,7 +170,7 @@
             shape_of_head_comboBox.Enabled = false;
             shape_of_head_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             shape_of_head_comboBox.FormattingEnabled = true;
-            shape_of_head_comboBox.Items.AddRange(new object[] { "категорія відсутня", "наявна", "відсутня" });
+            shape_of_head_comboBox.Items.AddRange(new object[] { "категорія відсутня", "кругла", "овальна", "загострена", "циліндрична" });
             shape_of_head_comboBox.Location = new Point(165, 7);
             shape_of_head_comboBox.Name = "shape_of_head_comboBox";
             shape_of_head_comboBox.Size = new Size(205, 32);
@@ -408,6 +185,7 @@
             clear_button.TabIndex = 13;
             clear_button.Text = "Очистити";
             clear_button.UseVisualStyleBackColor = true;
+            clear_button.Click += clear_button_Click_1;
             // 
             // panel9
             // 
@@ -568,6 +346,241 @@
             result_field_listbox.Size = new Size(787, 120);
             result_field_listbox.TabIndex = 14;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(frost_resistance_comboBox);
+            panel1.Controls.Add(author_comboBox);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(potential_harvest_comboBox);
+            panel1.Controls.Add(hybridity_of_culture_comboBox);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label10);
+            panel1.Controls.Add(hybridity_of_culture_label);
+            panel1.Controls.Add(exp_date_label);
+            panel1.Controls.Add(exp_date_comboBox);
+            panel1.Controls.Add(fetal_weight_comboBox);
+            panel1.Controls.Add(matur_time_comboBox);
+            panel1.Controls.Add(type_of_culture_comboBox);
+            panel1.Controls.Add(type_of_culture_label);
+            panel1.Controls.Add(basicparameters_label);
+            panel1.Controls.Add(name_of_culture_textbox);
+            panel1.Controls.Add(fetal_weight_label);
+            panel1.Controls.Add(matur_time_label);
+            panel1.Controls.Add(name_of_culture_label);
+            panel1.Location = new Point(5, 67);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(413, 413);
+            panel1.TabIndex = 30;
+            // 
+            // frost_resistance_comboBox
+            // 
+            frost_resistance_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            frost_resistance_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            frost_resistance_comboBox.FormattingEnabled = true;
+            frost_resistance_comboBox.Items.AddRange(new object[] { "", "наявна", "відсутня" });
+            frost_resistance_comboBox.Location = new Point(172, 284);
+            frost_resistance_comboBox.Name = "frost_resistance_comboBox";
+            frost_resistance_comboBox.Size = new Size(238, 32);
+            frost_resistance_comboBox.TabIndex = 7;
+            // 
+            // author_comboBox
+            // 
+            author_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            author_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            author_comboBox.FormattingEnabled = true;
+            author_comboBox.Items.AddRange(new object[] { "", "Монсанто (огірок, помідор, капуста)", "Сингента (огірок, помідор, капуста)", "Бейо Заден (огірок, помідор, капуста)", "Рійк Цваан (огірок, помідор, капуста)", "Нанхемс БАСФ (огірок)", "Семініс (перець)", "Енза Заден (перець, капуста)", "Хазера насіння (перець)", "Клауз (перець)", "Такіі насіння (перець)", "Саката насіння (помідор)", "ХЗПК (картопля)", "Агріко (картопля)", "Мейжер (картопля)", "Стет (картопля)", "Солана (картопля)" });
+            author_comboBox.Location = new Point(172, 123);
+            author_comboBox.Name = "author_comboBox";
+            author_comboBox.Size = new Size(238, 32);
+            author_comboBox.TabIndex = 3;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Snow;
+            label1.Location = new Point(29, 124);
+            label1.Name = "label1";
+            label1.Size = new Size(130, 26);
+            label1.TabIndex = 20;
+            label1.Text = "Автор культури";
+            label1.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // potential_harvest_comboBox
+            // 
+            potential_harvest_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            potential_harvest_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            potential_harvest_comboBox.FormattingEnabled = true;
+            potential_harvest_comboBox.Items.AddRange(new object[] { "", "30-50 т/га", "40-70 т/га", "60-100 т/га" });
+            potential_harvest_comboBox.Location = new Point(172, 367);
+            potential_harvest_comboBox.Name = "potential_harvest_comboBox";
+            potential_harvest_comboBox.Size = new Size(238, 32);
+            potential_harvest_comboBox.TabIndex = 9;
+            // 
+            // hybridity_of_culture_comboBox
+            // 
+            hybridity_of_culture_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            hybridity_of_culture_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            hybridity_of_culture_comboBox.FormattingEnabled = true;
+            hybridity_of_culture_comboBox.Items.AddRange(new object[] { "", "наявна", "відсутня" });
+            hybridity_of_culture_comboBox.Location = new Point(172, 243);
+            hybridity_of_culture_comboBox.Name = "hybridity_of_culture_comboBox";
+            hybridity_of_culture_comboBox.Size = new Size(238, 32);
+            hybridity_of_culture_comboBox.TabIndex = 6;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.Snow;
+            label4.Location = new Point(26, 290);
+            label4.Name = "label4";
+            label4.Size = new Size(137, 26);
+            label4.TabIndex = 18;
+            label4.Text = "Морозостійкість";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.Snow;
+            label10.Location = new Point(3, 367);
+            label10.Name = "label10";
+            label10.Size = new Size(156, 26);
+            label10.TabIndex = 11;
+            label10.Text = "Потенціал урожаю";
+            // 
+            // hybridity_of_culture_label
+            // 
+            hybridity_of_culture_label.AutoSize = true;
+            hybridity_of_culture_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            hybridity_of_culture_label.ForeColor = Color.Snow;
+            hybridity_of_culture_label.Location = new Point(61, 247);
+            hybridity_of_culture_label.Name = "hybridity_of_culture_label";
+            hybridity_of_culture_label.Size = new Size(102, 26);
+            hybridity_of_culture_label.TabIndex = 11;
+            hybridity_of_culture_label.Text = "Гібридність";
+            // 
+            // exp_date_label
+            // 
+            exp_date_label.AutoSize = true;
+            exp_date_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            exp_date_label.ForeColor = Color.Snow;
+            exp_date_label.Location = new Point(14, 327);
+            exp_date_label.Name = "exp_date_label";
+            exp_date_label.Size = new Size(152, 26);
+            exp_date_label.TabIndex = 15;
+            exp_date_label.Text = "Термін зберігання";
+            // 
+            // exp_date_comboBox
+            // 
+            exp_date_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            exp_date_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            exp_date_comboBox.FormattingEnabled = true;
+            exp_date_comboBox.Items.AddRange(new object[] { "", "від 1 до 2 тижнів", "від 2 до 3 тижнів", "від 4 до 6 місяців", "від 6 до 8 місяців" });
+            exp_date_comboBox.Location = new Point(172, 326);
+            exp_date_comboBox.Name = "exp_date_comboBox";
+            exp_date_comboBox.Size = new Size(238, 32);
+            exp_date_comboBox.TabIndex = 8;
+            // 
+            // fetal_weight_comboBox
+            // 
+            fetal_weight_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            fetal_weight_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            fetal_weight_comboBox.FormattingEnabled = true;
+            fetal_weight_comboBox.Items.AddRange(new object[] { "", "100 гр", "150 гр", "175 гр", "200 гр", "250 гр", "понад 1,5 кг", "понад 2-3 кг" });
+            fetal_weight_comboBox.Location = new Point(172, 203);
+            fetal_weight_comboBox.Name = "fetal_weight_comboBox";
+            fetal_weight_comboBox.Size = new Size(238, 32);
+            fetal_weight_comboBox.TabIndex = 5;
+            // 
+            // matur_time_comboBox
+            // 
+            matur_time_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            matur_time_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            matur_time_comboBox.FormattingEnabled = true;
+            matur_time_comboBox.Items.AddRange(new object[] { "", "ранньостиглі", "середньостиглі", "пізньостиглі" });
+            matur_time_comboBox.Location = new Point(172, 163);
+            matur_time_comboBox.Name = "matur_time_comboBox";
+            matur_time_comboBox.Size = new Size(238, 32);
+            matur_time_comboBox.TabIndex = 4;
+            // 
+            // type_of_culture_comboBox
+            // 
+            type_of_culture_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            type_of_culture_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            type_of_culture_comboBox.FormattingEnabled = true;
+            type_of_culture_comboBox.Items.AddRange(new object[] { "", "огірок", "перець", "помідор", "капуста", "картопля" });
+            type_of_culture_comboBox.Location = new Point(172, 81);
+            type_of_culture_comboBox.Name = "type_of_culture_comboBox";
+            type_of_culture_comboBox.Size = new Size(238, 32);
+            type_of_culture_comboBox.TabIndex = 2;
+            // 
+            // type_of_culture_label
+            // 
+            type_of_culture_label.AutoSize = true;
+            type_of_culture_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            type_of_culture_label.ForeColor = Color.Snow;
+            type_of_culture_label.Location = new Point(44, 82);
+            type_of_culture_label.Name = "type_of_culture_label";
+            type_of_culture_label.Size = new Size(115, 26);
+            type_of_culture_label.TabIndex = 16;
+            type_of_culture_label.Text = "Вид культури";
+            type_of_culture_label.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // basicparameters_label
+            // 
+            basicparameters_label.AutoSize = true;
+            basicparameters_label.Font = new Font("Sitka Banner", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            basicparameters_label.ForeColor = Color.Snow;
+            basicparameters_label.Location = new Point(132, 2);
+            basicparameters_label.Name = "basicparameters_label";
+            basicparameters_label.Size = new Size(178, 29);
+            basicparameters_label.TabIndex = 10;
+            basicparameters_label.Text = "Основні параметри";
+            // 
+            // name_of_culture_textbox
+            // 
+            name_of_culture_textbox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            name_of_culture_textbox.Location = new Point(172, 42);
+            name_of_culture_textbox.MaxLength = 30;
+            name_of_culture_textbox.Name = "name_of_culture_textbox";
+            name_of_culture_textbox.Size = new Size(238, 29);
+            name_of_culture_textbox.TabIndex = 1;
+            // 
+            // fetal_weight_label
+            // 
+            fetal_weight_label.AutoSize = true;
+            fetal_weight_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            fetal_weight_label.ForeColor = Color.Snow;
+            fetal_weight_label.Location = new Point(61, 204);
+            fetal_weight_label.Name = "fetal_weight_label";
+            fetal_weight_label.Size = new Size(96, 26);
+            fetal_weight_label.TabIndex = 4;
+            fetal_weight_label.Text = "Вага плоду";
+            // 
+            // matur_time_label
+            // 
+            matur_time_label.AutoSize = true;
+            matur_time_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            matur_time_label.ForeColor = Color.Snow;
+            matur_time_label.Location = new Point(29, 161);
+            matur_time_label.Name = "matur_time_label";
+            matur_time_label.Size = new Size(130, 26);
+            matur_time_label.TabIndex = 3;
+            matur_time_label.Text = "Час дозрівання";
+            // 
+            // name_of_culture_label
+            // 
+            name_of_culture_label.AutoSize = true;
+            name_of_culture_label.Font = new Font("Sitka Banner", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            name_of_culture_label.ForeColor = Color.Snow;
+            name_of_culture_label.Location = new Point(29, 42);
+            name_of_culture_label.Name = "name_of_culture_label";
+            name_of_culture_label.Size = new Size(130, 26);
+            name_of_culture_label.TabIndex = 1;
+            name_of_culture_label.Text = "Назва культури";
+            // 
             // DeletePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -580,8 +593,6 @@
             Text = "Сторінка видалення рослини";
             DeletePage_panel.ResumeLayout(false);
             DeletePage_panel.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
@@ -594,6 +605,8 @@
             panel7.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -601,31 +614,10 @@
 
         private Panel DeletePage_panel;
         private Label titlehandbookofbreeder;
-        private Panel panel1;
-        private ComboBox frost_resistance_comboBox;
-        private ComboBox author_comboBox;
-        private Label label2;
-        private ComboBox potential_harvest_comboBox;
-        private ComboBox hybridity_of_culture_comboBox;
-        private Label label1;
-        private Label label10;
-        private Label hybridity_of_culture_label;
-        private Label exp_date_label;
-        private ComboBox exp_date_comboBox;
-        private ComboBox fetal_weight_comboBox;
-        private ComboBox matur_time_comboBox;
-        private ComboBox type_of_culture_comboBox;
-        private Label type_of_culture_label;
-        private Label basicparameters_label;
-        private TextBox name_of_culture_textbox;
-        private Label fetal_weight_label;
-        private Label matur_time_label;
-        private Label name_of_culture_label;
         private Label title_searching_result;
         private Panel panel2;
         private Panel panel3;
         private Label label3;
-        private ComboBox shape_of_head_comboBox;
         private Button clear_button;
         private Panel panel9;
         private ComboBox starch_content_comboBox;
@@ -642,5 +634,27 @@
         private Label label9;
         private Label extraparameters_label;
         private ListBox result_field_listbox;
+        private Button cancel_button;
+        private ComboBox shape_of_head_comboBox;
+        private Panel panel1;
+        private ComboBox frost_resistance_comboBox;
+        private ComboBox author_comboBox;
+        private Label label1;
+        private ComboBox potential_harvest_comboBox;
+        private ComboBox hybridity_of_culture_comboBox;
+        private Label label4;
+        private Label label10;
+        private Label hybridity_of_culture_label;
+        private Label exp_date_label;
+        private ComboBox exp_date_comboBox;
+        private ComboBox fetal_weight_comboBox;
+        private ComboBox matur_time_comboBox;
+        private ComboBox type_of_culture_comboBox;
+        private Label type_of_culture_label;
+        private Label basicparameters_label;
+        private TextBox name_of_culture_textbox;
+        private Label fetal_weight_label;
+        private Label matur_time_label;
+        private Label name_of_culture_label;
     }
 }

@@ -35,7 +35,7 @@ namespace AgroDictionary.Forms
             this.jsonFilePath = jsonFilePath;
             DisplayPlantDetails();
         }
-        private void name_of_culture_textbox_Validating(object sender, CancelEventArgs e)
+        private void name_of_culture_textbox_Validating(object? sender, CancelEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text))
             {
@@ -46,7 +46,7 @@ namespace AgroDictionary.Forms
                 titleError_label.Visible = false;
             }
         }
-        private void description_field_textBox_Validating(object sender, CancelEventArgs e)
+        private void description_field_textBox_Validating(object? sender, CancelEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(description_field_textBox.Text))
             {
@@ -57,7 +57,7 @@ namespace AgroDictionary.Forms
                 titleError_label1.Visible = false;
             }
         }
-        private void name_of_culture_textbox_KeyPress(object sender, KeyPressEventArgs e)
+        private void name_of_culture_textbox_KeyPress(object? sender, KeyPressEventArgs e)
         {
             if (char.IsDigit(e.KeyChar))
             {
@@ -67,7 +67,7 @@ namespace AgroDictionary.Forms
                 "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        private void type_of_culture_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void type_of_culture_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
 
             string selectedCultureType = type_of_culture_comboBox.SelectedItem.ToString().ToLower();
@@ -136,7 +136,7 @@ namespace AgroDictionary.Forms
                     break;
             }
         }
-        private void type_of_pollution_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void type_of_pollution_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (type_of_pollution_comboBox.Enabled == true)
             {
@@ -152,7 +152,7 @@ namespace AgroDictionary.Forms
             }
 
         }
-        private void cuboid_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void cuboid_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (cuboid_comboBox.Enabled == true)
             {
@@ -166,7 +166,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void indeterminate_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void indeterminate_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (indeterminate_comboBox.Enabled == true)
             {
@@ -180,7 +180,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void shape_of_head_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void shape_of_head_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (shape_of_head_comboBox.Enabled == true)
             {
@@ -194,7 +194,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void starch_content_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void starch_content_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (starch_content_comboBox.Enabled == true)
             {
@@ -241,7 +241,7 @@ namespace AgroDictionary.Forms
             description_field_textBox.Text = plant.Description;
         }
 
-        private void save_button_Click(object sender, EventArgs e)
+        private void save_button_Click(object? sender, EventArgs e)
         {
 
             if (string.IsNullOrWhiteSpace(description_field_textBox.Text) || string.IsNullOrWhiteSpace(name_of_culture_textbox.Text))
@@ -330,7 +330,7 @@ namespace AgroDictionary.Forms
             Saved?.Invoke(this, e);
         }
 
-        private void cancel_button_Click(object sender, EventArgs e)
+        private void cancel_button_Click(object? sender, EventArgs e)
         {
             this.Close();
         }

@@ -29,7 +29,7 @@ namespace AgroDictionary.Forms
 
         }
 
-        private void name_of_culture_textbox_KeyPress(object sender, KeyPressEventArgs e)
+        private void name_of_culture_textbox_KeyPress(object? sender, KeyPressEventArgs e)
         {
             if (char.IsDigit(e.KeyChar))
             {
@@ -39,7 +39,7 @@ namespace AgroDictionary.Forms
                 "Помилка введення", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        private void type_of_culture_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void type_of_culture_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (type_of_culture_comboBox.SelectedItem == null || string.IsNullOrEmpty(type_of_culture_comboBox.Text))
             {
@@ -122,7 +122,7 @@ namespace AgroDictionary.Forms
                     break;
             }
         }
-        private void type_of_pollution_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void type_of_pollution_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (type_of_pollution_comboBox.Enabled == true)
             {
@@ -137,7 +137,7 @@ namespace AgroDictionary.Forms
             }
 
         }
-        private void cuboid_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void cuboid_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (cuboid_comboBox.Enabled == true)
             {
@@ -150,7 +150,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void indeterminate_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void indeterminate_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (indeterminate_comboBox.Enabled == true)
             {
@@ -163,7 +163,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void shape_of_head_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void shape_of_head_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (shape_of_head_comboBox.Enabled == true)
             {
@@ -176,7 +176,7 @@ namespace AgroDictionary.Forms
                 }
             }
         }
-        private void starch_content_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void starch_content_comboBox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (starch_content_comboBox.Enabled == true)
             {
@@ -191,7 +191,7 @@ namespace AgroDictionary.Forms
         }
 
 
-        private void search_button_Click(object sender, EventArgs e)
+        private void search_button_Click(object? sender, EventArgs e)
         {
 
             if (string.IsNullOrWhiteSpace(name_of_culture_textbox.Text) &&
@@ -288,13 +288,13 @@ namespace AgroDictionary.Forms
                 MessageBox.Show("На жаль, результатів не знайдено. \nПримітка:" +
                     " якщо ви шукали культуру за ім'ям та іншим параметром," +
                     " то перевірте, чи немає у полі 'Ім'я культури' випадкових" +
-                    " пробілів. Якщо є, то приберіть їх будь ласка, щоб полегшити" +
-                    " пошук або введіть назву культури, якщо потрібно");
+                    " пробілів. Якщо є, то приберіть їх, будь ласка, щоб полегшити" +
+                    " пошук або введіть просто назву культури без параметрів, якщо потрібно");
 
                 result_field_listbox.Items.Clear();
             }
         }
-        private void result_field_listbox_SelectedIndexChanged(object sender, EventArgs e)
+        private void result_field_listbox_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (result_field_listbox.SelectedItem != null)
             {
@@ -351,25 +351,25 @@ namespace AgroDictionary.Forms
             infopage.ShowDialog();
         }
 
-        private void додатиРослинуToolStripMenuItem_Click(object sender, EventArgs e)
+        private void додатиРослинуToolStripMenuItem_Click(object? sender, EventArgs e)
         {
             AddPage addpage = new AddPage();
 
             addpage.ShowDialog();
         }
 
-        private void видалитиРослинуToolStripMenuItem_Click(object sender, EventArgs e)
+        private void видалитиРослинуToolStripMenuItem_Click(object? sender, EventArgs e)
         {
             DeletePage deletePage = new DeletePage();
             deletePage.ShowDialog();
         }
 
-        private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
+        private void вихідToolStripMenuItem_Click(object? sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void пропрограмуToolStripMenuItem_Click(object sender, EventArgs e)
+        private void пропрограмуToolStripMenuItem_Click(object? sender, EventArgs e)
         {
             MessageBox.Show("Автор: ст. гр. ПЗПІ-23-4 Рибалко Ігор");
         }
