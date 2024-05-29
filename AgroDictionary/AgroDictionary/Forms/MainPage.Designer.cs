@@ -45,7 +45,6 @@
             label3 = new Label();
             clear_button = new Button();
             panel9 = new Panel();
-            starch_content_comboBox = new ComboBox();
             label14 = new Label();
             panel6 = new Panel();
             indeterminate_comboBox = new ComboBox();
@@ -79,6 +78,7 @@
             fetal_weight_label = new Label();
             matur_time_label = new Label();
             name_of_culture_label = new Label();
+            starch_content_comboBox = new ComboBox();
             menuStrip_of_mainpage.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -214,7 +214,7 @@
             shape_of_head_comboBox.Enabled = false;
             shape_of_head_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             shape_of_head_comboBox.FormattingEnabled = true;
-            shape_of_head_comboBox.Items.AddRange(new object[] { "категорія відсутня", "кругла", "овальна", "загострена", "циліндрична" });
+            shape_of_head_comboBox.Items.AddRange(new object[] { "категорія відсутня", "кругла", "загострена", "циліндрична" });
             shape_of_head_comboBox.Location = new Point(165, 12);
             shape_of_head_comboBox.Name = "shape_of_head_comboBox";
             shape_of_head_comboBox.Size = new Size(205, 32);
@@ -250,18 +250,6 @@
             panel9.Name = "panel9";
             panel9.Size = new Size(378, 43);
             panel9.TabIndex = 18;
-            // 
-            // starch_content_comboBox
-            // 
-            starch_content_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            starch_content_comboBox.Enabled = false;
-            starch_content_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            starch_content_comboBox.FormattingEnabled = true;
-            starch_content_comboBox.Items.AddRange(new object[] { "категорія відсутня", "від 30 до 50%", "від 50 до 60 %", "від 60 до 70%", "понад 70 %" });
-            starch_content_comboBox.Location = new Point(165, 4);
-            starch_content_comboBox.Name = "starch_content_comboBox";
-            starch_content_comboBox.Size = new Size(205, 32);
-            starch_content_comboBox.TabIndex = 14;
             // 
             // label14
             // 
@@ -640,6 +628,18 @@
             name_of_culture_label.TabIndex = 1;
             name_of_culture_label.Text = "Назва культури";
             // 
+            // starch_content_comboBox
+            // 
+            starch_content_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            starch_content_comboBox.Enabled = false;
+            starch_content_comboBox.Font = new Font("Sitka Banner", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            starch_content_comboBox.FormattingEnabled = true;
+            starch_content_comboBox.Items.AddRange(new object[] { "категорія відсутня", "0-5%", "5-10%", "10-15%", "15-20%", "понад 20%" });
+            starch_content_comboBox.Location = new Point(165, 1);
+            starch_content_comboBox.Name = "starch_content_comboBox";
+            starch_content_comboBox.Size = new Size(205, 32);
+            starch_content_comboBox.TabIndex = 15;
+            // 
             // MainPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -691,7 +691,6 @@
         private Panel panel2;
         private Button clear_button;
         private Panel panel9;
-        private ComboBox starch_content_comboBox;
         private Label label14;
         private Panel panel6;
         private Label label11;
@@ -728,5 +727,6 @@
         private Label matur_time_label;
         private Label name_of_culture_label;
         private ComboBox shape_of_head_comboBox;
+        private ComboBox starch_content_comboBox;
     }
 }

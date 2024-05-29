@@ -479,18 +479,23 @@ namespace AgroDictionary.Forms
                 type_of_culture_comboBox.SelectedIndex = -1;
 
                 author_comboBox.SelectedIndex = -1;
+                author_comboBox.Enabled = false;
 
                 matur_time_comboBox.SelectedIndex = -1;
 
                 fetal_weight_comboBox.SelectedIndex = -1;
+                fetal_weight_comboBox.Enabled = false;
 
                 hybridity_of_culture_comboBox.SelectedIndex = -1;
 
                 frost_resistance_comboBox.SelectedIndex = -1;
 
                 exp_date_comboBox.SelectedIndex = -1;
+                exp_date_comboBox.Enabled = false;
+
 
                 potential_harvest_comboBox.SelectedIndex = -1;
+                potential_harvest_comboBox.Enabled = false;
 
                 type_of_pollution_comboBox.SelectedIndex = -1;
 
