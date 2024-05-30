@@ -280,7 +280,7 @@ namespace AgroDictionary.Forms
                 foreach (var res in searchresults)
                 {
                     string JSONplant = JsonConvert.SerializeObject(res);
-                    result_field_listbox.Items.Add(res.Name + "                                                                                                                                                                    " + JSONplant);
+                    result_field_listbox.Items.Add(res.Name + ", " + res.Type + "                                                                                                                                                                    " + JSONplant);
                 }
             }
             else
