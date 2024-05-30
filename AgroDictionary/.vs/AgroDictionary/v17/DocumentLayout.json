@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\forms\\deletepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|c:\\users\\vivobook 15\\desktop\\course_work_rio\\agrodictionary\\agrodictionary\\forms\\deletepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\forms\\deletepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|c:\\users\\vivobook 15\\desktop\\course_work_rio\\agrodictionary\\agrodictionary\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\forms\\deletepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\forms\\deletepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\models\\searchclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\models\\searchclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\forms\\addpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\forms\\addpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\forms\\infopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +21,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\forms\\infopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\forms\\infopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\forms\\deletepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\forms\\deletepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\models\\searchclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\models\\searchclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\forms\\addpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\forms\\addpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\forms\\addpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|solutionrelative:agrodictionary\\forms\\addpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B3BB647-C4E5-4453-A377-7357AC47B925}|AgroDictionary\\AgroDictionary.csproj|C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\agrodictionary\\forms\\editpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +78,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "data_of_plants.json",
               "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\bin\\Debug\\net8.0-windows\\data_of_plants.json",
               "RelativeDocumentMoniker": "AgroDictionary\\bin\\Debug\\net8.0-windows\\data_of_plants.json",
@@ -91,20 +91,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainPage.cs [Design]",
+              "DocumentIndex": 7,
+              "Title": "MainPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\MainPage.cs",
               "RelativeDocumentMoniker": "AgroDictionary\\Forms\\MainPage.cs",
-              "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\MainPage.cs [Design]",
-              "RelativeToolTip": "AgroDictionary\\Forms\\MainPage.cs [Design]",
+              "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\MainPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "AgroDictionary\\Forms\\MainPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T10:07:29.568Z",
               "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "InfoPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\InfoPage.cs",
               "RelativeDocumentMoniker": "AgroDictionary\\Forms\\InfoPage.cs",
@@ -112,11 +112,12 @@
               "RelativeToolTip": "AgroDictionary\\Forms\\InfoPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T12:40:46.18Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "AddPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\AddPage.cs",
               "RelativeDocumentMoniker": "AgroDictionary\\Forms\\AddPage.cs",
@@ -124,11 +125,12 @@
               "RelativeToolTip": "AgroDictionary\\Forms\\AddPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T17:38:23.865Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "EditPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\EditPage.cs",
               "RelativeDocumentMoniker": "AgroDictionary\\Forms\\EditPage.cs",
@@ -140,16 +142,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DeletePage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentIndex": 5,
+              "Title": "DeletePage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\DeletePage.cs",
               "RelativeDocumentMoniker": "AgroDictionary\\Forms\\DeletePage.cs",
-              "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\DeletePage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "AgroDictionary\\Forms\\DeletePage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\DeletePage.cs [Design]",
+              "RelativeToolTip": "AgroDictionary\\Forms\\DeletePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T20:22:45.998Z",
               "IsPinned": true,
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -159,7 +161,7 @@
               "RelativeDocumentMoniker": "AgroDictionary\\Forms\\MainPage.cs",
               "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\MainPage.cs",
               "RelativeToolTip": "AgroDictionary\\Forms\\MainPage.cs",
-              "ViewState": "AQIAABEBAAAAAAAAAAAIwBoBAABQAAAA",
+              "ViewState": "AQIAAAgBAAAAAAAAAAAIwBoBAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T10:58:10.841Z",
               "IsPinned": true,
@@ -180,20 +182,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "InfoPage.cs",
               "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\InfoPage.cs",
               "RelativeDocumentMoniker": "AgroDictionary\\Forms\\InfoPage.cs",
               "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\InfoPage.cs",
               "RelativeToolTip": "AgroDictionary\\Forms\\InfoPage.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwA0AAAAeAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwA0AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T12:40:53.524Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "AddPage.cs",
               "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\AddPage.cs",
               "RelativeDocumentMoniker": "AgroDictionary\\Forms\\AddPage.cs",
@@ -202,7 +205,8 @@
               "ViewState": "AQIAANUBAAAAAAAAAAAuwOcBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T18:02:59.494Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -225,7 +229,7 @@
               "RelativeDocumentMoniker": "AgroDictionary\\Forms\\DeletePage.cs",
               "ToolTip": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Forms\\DeletePage.cs",
               "RelativeToolTip": "AgroDictionary\\Forms\\DeletePage.cs",
-              "ViewState": "AQIAAAYBAAAAAAAAAAAIwBQBAAAoAAAA",
+              "ViewState": "AQIAAAwBAAAAAAAAAAAIwB8BAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T20:37:11.896Z",
               "EditorCaption": ""
@@ -240,11 +244,12 @@
               "RelativeToolTip": "AgroDictionary\\Forms\\MainPage.Designer.cs",
               "ViewState": "AQIAAHAAAAAAAAAAAAAMwIMAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T09:09:45.701Z"
+              "WhenOpened": "2024-05-24T09:09:45.701Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "SearchClass.cs",
               "DocumentMoniker": "C:\\Users\\VivoBook 15\\Desktop\\Course_WORK_RIO\\AgroDictionary\\AgroDictionary\\Models\\SearchClass.cs",
               "RelativeDocumentMoniker": "AgroDictionary\\Models\\SearchClass.cs",
